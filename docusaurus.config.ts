@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'lobaro', // Usually your GitHub org/user name.
   projectName: 'iot', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -47,7 +47,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        }, */
+        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -73,7 +73,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+      /*  {to: '/blog', label: 'Blog', position: 'left'},*/
         {
           href: 'https://github.com/lobaro/iot',
           label: 'GitHub',
@@ -105,10 +105,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
+           /* {
               label: 'Docs',
               to: '/docs',
-            },
+            },*/
             {
               label: 'GitHub',
               href: 'https://github.com/lobaro/iot',
