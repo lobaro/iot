@@ -38,15 +38,16 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lobaro/iot/tree/master/docs',
+            'https://github.com/lobaro/iot/tree/master',
         },
-        blog: {
+        blog: false,
+       /* blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        }, */
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,7 +75,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/lobaro/iot',
           label: 'GitHub',
           position: 'right',
         },
@@ -96,16 +97,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/lobaro/',
             },
           ],
         },
@@ -113,12 +106,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Docs',
+              to: '/docs',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/lobaro/iot',
             },
           ],
         },
