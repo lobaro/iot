@@ -56,10 +56,13 @@ const config: Config = {
     ],
   ],
 
+  // https://docusaurus.io/docs/api/docusaurus-config#themeConfig
   themeConfig: {
     // Replace with your project's social card
+
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
+      hideOnScroll: true,
       title: 'Docs',
       logo: {
         alt: 'Lobaro GmbH - Logo',
@@ -76,23 +79,53 @@ const config: Config = {
           label: 'All Products',
         },*/
         {
+          type: 'dropdown',
+          label: 'Community',
+          position: 'left',
+          items: [
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com',
+            },
+            {
+              type: 'doc',
+              label: 'Modbus',
+              docId: 'knowledge-base/modbus',
+            },
+            // ... more items
+          ],
+        },
+        {
+          type: 'html',
+          position: 'right',
+          value: '<button>Give feedback</button>',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'smartMeteringSidebar',
+          position: 'left',
+          label: 'Smart Metering Gateways',
+        },
+          /*
+        {
           type: 'docSidebar',
           sidebarId: 'wmbusGwSidebar',
           position: 'left',
           label: 'Wireless M-BUS Gateways',
-        },
+        },*/
         {
           type: 'docSidebar',
           sidebarId: 'platformSidebar',
           position: 'left',
           label: 'IoT Platform',
         },
+          /*
         {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',
           position: 'right',
           label: 'Knowledge Base',
-        },
+        },*/
         {
           type: 'docSidebar',
           sidebarId: 'allDocSidebar',

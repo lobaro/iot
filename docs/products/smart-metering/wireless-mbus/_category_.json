@@ -1,6 +1,7 @@
 {
-  "label": "Wireless M-BUS Gateways",
+  "label": "Wireless M-BUS",
   "position": 1,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "description": "Lobaro wireless M-BUS Gateways"

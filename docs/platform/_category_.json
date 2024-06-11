@@ -1,9 +1,8 @@
 {
-  "label": "Lobaro Platform",
-  "position": 3,
-  "collapsed": true,
+  "label": "IoT Platform",
+  "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Lobaro IoT Platform"
+  "type": "generated-index",
+  "description": "Knowledge Base"
   }
 }
