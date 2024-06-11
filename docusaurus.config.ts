@@ -87,11 +87,18 @@ const config: Config = {
           position: 'left',
           label: 'IoT Platform',
         },
+
         {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',
           position: 'right',
           label: 'Knowledge Base',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'allDocSidebar',
+          position: 'right',
+          label: 'All Docs',
         },
       /*  {to: '/blog', label: 'Blog', position: 'left'},*/
         {
