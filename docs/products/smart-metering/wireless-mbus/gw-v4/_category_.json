@@ -1,8 +1,0 @@
-{
-  "label": "Gateway V4",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Wireless M-BUS Gateway V4"
-  }
-}

@@ -81,7 +81,7 @@ const config: Config = {
         {
           type: 'dropdown',
           label: 'Community',
-          position: 'left',
+          position: 'right',
           items: [
             {
               label: 'Facebook',
@@ -102,9 +102,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'smartMeteringSidebar',
+          sidebarId: 'MeteringGwSidebar',
           position: 'left',
-          label: 'Smart Metering Gateways',
+          label: 'Metering Gateways',
         },
           /*
         {

@@ -1,8 +1,0 @@
-{
-  "label": "Concentrator Gateway",
-  "position": 6,
-  "link": {
-    "type": "generated-index",
-    "description": "Wireless M-BUS Gateways"
-  }
-}
