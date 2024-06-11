@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Platform Introduction
+# Lobaro IoT Platform 
 
 
 ## Getting Started

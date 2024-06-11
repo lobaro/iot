@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Platform 2
+# Lobaro Direct+
 
 
 ## Getting Started

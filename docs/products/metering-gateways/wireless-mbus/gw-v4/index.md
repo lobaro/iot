@@ -1,9 +1,7 @@
 ---
 sidebar_position: 1
 ---
-:::warning
-This product has been discontinued and functionally replaced by the wMBUS gateway V3 / V4.
-:::
+
 # Wmbus Gateway V4
 
 ## Getting Started

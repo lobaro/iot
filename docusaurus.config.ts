@@ -34,7 +34,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-         // routeBasePath: '/',
+         routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -59,7 +59,6 @@ const config: Config = {
   // https://docusaurus.io/docs/api/docusaurus-config#themeConfig
   themeConfig: {
     // Replace with your project's social card
-
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       hideOnScroll: true,
@@ -68,7 +67,7 @@ const config: Config = {
         alt: 'Lobaro GmbH - Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logoDark.svg',
-        width: '100px'
+        width: '120px'
       },
       items: [
           /*
@@ -78,6 +77,7 @@ const config: Config = {
           position: 'left',
           label: 'All Products',
         },*/
+         /*
         {
           type: 'dropdown',
           label: 'Community',
@@ -99,33 +99,33 @@ const config: Config = {
           type: 'html',
           position: 'right',
           value: '<button>Give feedback</button>',
-        },
+        },*/
         {
           type: 'docSidebar',
           sidebarId: 'MeteringGwSidebar',
           position: 'left',
           label: 'Metering Gateways',
         },
-          /*
+
         {
           type: 'docSidebar',
-          sidebarId: 'wmbusGwSidebar',
+          sidebarId: 'SensorGwSidebar',
           position: 'left',
-          label: 'Wireless M-BUS Gateways',
-        },*/
-        {
-          type: 'docSidebar',
-          sidebarId: 'platformSidebar',
-          position: 'left',
-          label: 'IoT Platform',
+          label: 'Sensor Gateways',
         },
-          /*
+
+        {
+          type: 'docSidebar',
+          sidebarId: 'cloudSidebar',
+          position: 'left',
+          label: 'Lobaro Cloud',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',
           position: 'right',
           label: 'Knowledge Base',
-        },*/
+        },
         {
           type: 'docSidebar',
           sidebarId: 'allDocSidebar',
