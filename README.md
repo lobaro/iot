@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-`npm start`
+`npm start`r
 Starts the development server.
 
 `npm run build`
