@@ -1,0 +1,8 @@
+{
+  "label": "Solar Gateway V1",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Wireless M-BUS Gateways"
+  }
+}

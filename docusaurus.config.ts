@@ -68,11 +68,30 @@ const config: Config = {
         width: '100px'
       },
       items: [
+          /*
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'productsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'All Products',
+        },*/
+        {
+          type: 'docSidebar',
+          sidebarId: 'wmbusGwSidebar',
+          position: 'left',
+          label: 'Wireless M-BUS Gateways',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'platformSidebar',
+          position: 'left',
+          label: 'IoT Platform',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'knowledgeBaseSidebar',
+          position: 'right',
+          label: 'Knowledge Base',
         },
       /*  {to: '/blog', label: 'Blog', position: 'left'},*/
         {

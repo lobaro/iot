@@ -1,0 +1,9 @@
+{
+  "label": "Hardware Products",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Lobaro IoT Hardware"
+  }
+}

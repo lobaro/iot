@@ -1,0 +1,8 @@
+{
+  "label": "LoRaWAN Bridge V2",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Wireless M-BUS Gateways"
+  }
+}
