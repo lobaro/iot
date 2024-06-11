@@ -87,7 +87,6 @@ const config: Config = {
           position: 'left',
           label: 'IoT Platform',
         },
-
         {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',

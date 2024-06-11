@@ -1,6 +1,7 @@
 {
   "label": "Knowledge Base",
   "position": 1,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "description": "Knowledge Base related to Lobaro Products"
