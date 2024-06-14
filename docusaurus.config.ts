@@ -102,18 +102,22 @@ const config: Config = {
         },*/
         {
           type: 'docSidebar',
-          sidebarId: 'MeteringGwSidebar',
+          sidebarId: 'productsSidebar',
           position: 'left',
-          label: 'Metering Gateways',
+          label: 'Products',
         },
-
         {
           type: 'docSidebar',
-          sidebarId: 'SensorGwSidebar',
+          sidebarId: 'softwareSidebar',
           position: 'left',
-          label: 'Sensor Gateways',
+          label: 'Software',
         },
-
+        {
+          type: 'docSidebar',
+          sidebarId: 'hardwareSidebar',
+          position: 'left',
+          label: 'Hardware',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'cloudSidebar',
