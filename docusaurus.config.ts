@@ -38,8 +38,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lobaro/iot/tree/master',
+          editUrl: 'https://github.com/lobaro/iot/tree/master',
         },
         blog: false,
        /* blog: {
@@ -60,6 +59,12 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    docs: {
+      sidebar: {
+        hideable: false,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
       hideOnScroll: true,
       title: 'Docs',
@@ -100,6 +105,26 @@ const config: Config = {
           position: 'right',
           value: '<button>Give feedback</button>',
         },*/
+          /*
+        {
+          type: 'dropdown',
+          label: 'Products',
+          position: 'left',
+          items: [
+            {
+              type: 'doc',
+              label: 'Metering Gateways',
+              docId: 'products/metering-gateways/index',
+            },
+            {
+              type: 'doc',
+              label: 'Sensor Gateways',
+              docId: 'products/sensor-gateways/index',
+            },
+            // ... more items
+          ],
+        },
+          */
         {
           type: 'docSidebar',
           sidebarId: 'productsSidebar',
@@ -108,15 +133,21 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'softwareSidebar',
+          sidebarId: 'firmwareSidebar',
           position: 'left',
-          label: 'Software',
+          label: 'Firmware',
         },
         {
           type: 'docSidebar',
           sidebarId: 'hardwareSidebar',
           position: 'left',
           label: 'Hardware',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'configurationSidebar',
+          position: 'left',
+          label: 'Configuration',
         },
         {
           type: 'docSidebar',
@@ -145,41 +176,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/lobaro/',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-           /* {
-              label: 'Docs',
-              to: '/docs',
-            },*/
-            {
-              label: 'GitHub',
-              href: 'https://github.com/lobaro/iot',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Lobaro GmbH.`,
+      copyright: `Copyright © <a href="https://www.lobaro.de" target="_blank">Lobaro GmbH</a> ${new Date().getFullYear()} | Stadtdeich 7 | D-20097 Hamburg | Germany | <a href="mailto:support@lobaro.de">support@lobaro.de</a> | <a href="https://www.lobaro.com/en/contact/" target="_blank">Legal Disclosure</a>`
     },
     prism: {
       theme: prismThemes.github,
