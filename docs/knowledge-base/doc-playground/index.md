@@ -1,4 +1,4 @@
-# Docusaurus
+# Docusaurus Playground
 
 Location to showcase features and examples for writing content in this doc with is based on Docusaurus.
 
@@ -6,8 +6,7 @@ Location to showcase features and examples for writing content in this doc with 
 
 <Image alt='Docusaurus'
 img={require('@site/static/img/docusaurus.png')}
-style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}}
-/>
+style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}} />
 
 ```jsx title="Include images with absolute paths and CamelCase css styles"
 <Image alt='Docusaurus' 
@@ -16,14 +15,17 @@ style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}}
 ```
 ## Images
 
+### Center Align
+
+A dangerous plant:
 <Image alt='A dangerous plant'
 img={require('./img/plant.jpg')}
-style={{width:'75%',padding:'20px'}} />
+style={{width:'75%',padding:'20px',marginInline: 'auto'}} />
 
-```jsx title="Include images with relative paths"
+```jsx title="Include centered images with relative paths"
 <Image alt='A dangerous plant' 
        img={require('./img/plant.jpg')} 
-       style={{width:'85%',padding:'10px'}} />
+       style={{width:'85%',padding:'20px',marginInline: 'auto'}} /><
 ```
 
 :::info
@@ -31,6 +33,31 @@ Images get automatically resized by Docusaurus and must not resized manually to 
 page. The original plant image is 4.5 MB in size, Docusaurus' ideal-image plugin reduced the size to 272 kB. This
 mechanism also depends on the requested width.
 :::
+
+### Align Right with text
+
+<Image alt='A super small image of a dangerous plant'
+style={{width:'15%',padding:'10px',float:'right'}}
+img={require('./img/plant.jpg')}/>
+
+Line 1  
+Line 2  
+Line 3  
+Line 4
+
+```jsx title="small image on the right"
+<Image alt='A super small image of a dangerous plant'
+       img={require('./img/plant.jpg')}
+       style={{width:'20%',padding:'10px',float:'right'}} />
+```
+
+## Line Breaks
+
+The make a line break these options exit:
+
+1. Add 2 spaces at the end of a line.
+2. Add a HTML `<br>` or ` tag
+3. Add a `backslash`  (`\) at the end of a line
 
 ## Code Blocks
 * [Docusaurus Doc](https://docusaurus.io/docs/markdown-features/code-blocks)
@@ -46,7 +73,7 @@ mechanism also depends on the requested width.
 
 ## Admonitions
 
-:::note
+:::note[Your Title **with** some _Markdown_ `syntax`!]
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
@@ -67,7 +94,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
 ```markdown title="Admonitions"
-:::note
+:::note[Your Title **with** some _Markdown_ `syntax`!]
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 

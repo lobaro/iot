@@ -25,9 +25,9 @@ sidebar_position: 1
 </table></div>
 # Tutorial Intro
 
-|Foo|Bar|
-|---|---|
-|A|B|
+| Foo | Bar |
+|:---:|-----|
+|  A  | B   |
 
 Let's discover **Docusaurus in less than 5 minutes**.
 

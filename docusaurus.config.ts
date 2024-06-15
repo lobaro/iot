@@ -35,9 +35,9 @@ const config: Config = {
       {
         name: 'assets/images/ideal-img/[name].[hash:hex:7].[width].[ext]',
         quality: 85,
-        max: 1000, // max resized image's size.
-        min: 600, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        max: 1200, // max resized image's size.
+        min: 300, // min resized image's size. if original is lower, use that size.
+        steps: 4, // the max number of images generated between min and max (inclusive)
         disableInDev: false,
       },
     ],
@@ -138,7 +138,20 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-     // additionalLanguages: ['js','c'], // https://prismjs.com/#supported-languages
+      additionalLanguages: ['bash'], // https://prismjs.com/#supported-languages
+    },
+    imageZoom: {
+      // CSS selector to apply the plugin to, defaults to '.markdown img'
+      selector: '.markdown img',
+      // Optional medium-zoom options
+      // see: https://www.npmjs.com/package/medium-zoom#options
+      options: {
+        margin: 24,
+        background: '#BADA55',
+        scrollOffset: 0,
+        container: '#zoom-container',
+        template: '#zoom-template',
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
