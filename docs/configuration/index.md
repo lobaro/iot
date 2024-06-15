@@ -17,8 +17,8 @@ Device-specific parameters are explained in the respective documentation.
 img={require('./img/Lobaro-Config-in-Log.png')}
 style={{width:'90%',paddingTop:'5px',paddingBottom:'5px'}} />
 
-Any Lobaro device configuration can be set and read out either locally via a PC with the Lobaro configuration USB
-adapter and the Lobaro Maintenance Tool or remotely when using the Lobaro IoT platform and mobile radio (NB-IoT, LTE-M)
+Any Lobaro device configuration can be set and read out either locally via a PC with the [Lobaro configuration USB
+adapter](./usb-cfg-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md) or remotely when using the Lobaro IoT platform and mobile radio (NB-IoT, LTE-M)
 or any LoRaWAN network server using downlinks on a special port. Network parameters, such as the APN of the mobile
 cellular network provider, must usually first be configured correctly locally.
 
