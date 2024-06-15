@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Overview
+# Introduction
 
 :::info
 This new documentation center is currently work in progress

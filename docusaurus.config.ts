@@ -29,6 +29,20 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        name: 'assets/images/ideal-img/[name].[hash:hex:7].[width].[ext]',
+        quality: 85,
+        max: 1000, // max resized image's size.
+        min: 600, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -41,13 +55,6 @@ const config: Config = {
           editUrl: 'https://github.com/lobaro/iot/tree/master',
         },
         blog: false,
-       /* blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -75,56 +82,6 @@ const config: Config = {
         width: '120px'
       },
       items: [
-          /*
-        {
-          type: 'docSidebar',
-          sidebarId: 'productsSidebar',
-          position: 'left',
-          label: 'All Products',
-        },*/
-         /*
-        {
-          type: 'dropdown',
-          label: 'Community',
-          position: 'right',
-          items: [
-            {
-              label: 'Facebook',
-              href: 'https://www.facebook.com',
-            },
-            {
-              type: 'doc',
-              label: 'Modbus',
-              docId: 'knowledge-base/modbus',
-            },
-            // ... more items
-          ],
-        },
-        {
-          type: 'html',
-          position: 'right',
-          value: '<button>Give feedback</button>',
-        },*/
-          /*
-        {
-          type: 'dropdown',
-          label: 'Products',
-          position: 'left',
-          items: [
-            {
-              type: 'doc',
-              label: 'Metering Gateways',
-              docId: 'products/metering-gateways/index',
-            },
-            {
-              type: 'doc',
-              label: 'Sensor Gateways',
-              docId: 'products/sensor-gateways/index',
-            },
-            // ... more items
-          ],
-        },
-          */
         {
           type: 'docSidebar',
           sidebarId: 'productsSidebar',
@@ -176,11 +133,12 @@ const config: Config = {
       ],
     },
     footer: {
-      copyright: `Copyright © <a href="https://www.lobaro.de" target="_blank">Lobaro GmbH</a> ${new Date().getFullYear()} | Stadtdeich 7 | D-20097 Hamburg | Germany | <a href="mailto:support@lobaro.de">support@lobaro.de</a> | <a href="https://www.lobaro.com/en/contact/" target="_blank">Legal Disclosure</a>`
+      copyright: `<div style="font-size: small">Copyright © <a href="https://www.lobaro.de" target="_blank">Lobaro GmbH</a> ${new Date().getFullYear()} | Stadtdeich 7 | D-20097 Hamburg | Germany | <a href="mailto:support@lobaro.de">support@lobaro.de</a> | <a href="https://www.lobaro.com/en/contact/" target="_blank">Legal Disclosure</a></div>`
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+     // additionalLanguages: ['js','c'], // https://prismjs.com/#supported-languages
     },
   } satisfies Preset.ThemeConfig,
 };
