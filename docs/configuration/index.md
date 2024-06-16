@@ -17,7 +17,7 @@ img={require('./img/Lobaro-Config-in-Log.png')}
 style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 Any Lobaro device configuration can be set and read out either locally via a PC with the [Lobaro configuration USB
-adapter](./usb-cfg-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md) or over the air remotely
+adapter](./usb-config-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md) or over the air remotely
 using the Lobaro IoT platform and mobile radio (NB-IoT, LTE-M) or any LoRaWAN network server using downlinks on the
 special cfg port.
 

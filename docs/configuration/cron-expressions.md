@@ -5,7 +5,7 @@ sidebar_position: 3
 # CRON Expressions
 
 We use CRON expressions configure the behavioral timing of our devices. This CRON configuration can be adjusted during
-device configuration using the [Lobaro Maintenance Tool](./lobaro-tool/index.md)
+device configuration using the [Lobaro Maintenance Tool](./lobaro-tool)
 or remotely over the air.
 
 The CRON expressions consists of 6 fields, separated by space: e.g. `0 0/15 * * * *` , which describes time points every

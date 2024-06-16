@@ -172,16 +172,16 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 ### Controlled column width
 
-| Cron definition <div style={{width:'200px'}}/> | Description                                                                                                                                            |
-|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
-| ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
-| ` 0 0 1 ? * 2L       `                         | 1am on the last Tuesday of each month.                                                                                                                 |
-| ` H H H(0-2) * * *   `                         | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
-| ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
+| Cron definition | Description                                                                                                                                            |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ` 0 0 11 1W,15W * *  `                        | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
+| ` 0 0 15 1,L * *     `                        | 3pm on the first and last day of each month.                                                                                                           |
+| ` 0 0 1 ? * 2L       `                        | 1am on the last Tuesday of each month.                                                                                                                 |
+| ` H H H(0-2) * * *   `                        | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
+| ` H H(0-9)/10 * * * *`                        | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
 
 ```markdown title="Tables"
-| Cron definition <div style={{width:'200px'}}/> | Description                                                                                                                                            |
+| Cron definition | Description                                                                                                                                            |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
 | ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
