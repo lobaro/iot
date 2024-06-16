@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Lobaro Maintenance Tool
+# Lobaro Config Tool
 
-The Lobaro Maintenance Tool can be used to configure and diagnose Lobaro devices locally using a PC and our special
+The Lobaro Config Tool (a.k.a. Lobaro Maintenance Tool) can be used to configure and diagnose Lobaro devices locally using a PC and our special
 [USB configuration adapter](../usb-config-adapter). It's available as free [download](#download) for all common
 operating systems.
 

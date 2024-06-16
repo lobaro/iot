@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# CRON Expressions
+# CRON Configuration
 
 We use CRON expressions configure the behavioral timing of our devices. This CRON configuration can be adjusted during
 device configuration using the [Lobaro Maintenance Tool](./lobaro-tool)

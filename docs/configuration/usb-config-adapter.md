@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# USB Config Adapter
+# Lobaro USB Config Adapter
 
 The Lobaro USB configuration adapters connects the configuration serial uart of our devices to a PC. It is used for:
 

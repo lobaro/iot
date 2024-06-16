@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Remote Config (LoRaWAN)
+# LoRaWAN Downlink Config
 
 This article describes the technical details how to remotely configure Lobaro devices that are using **LoRaWAN** as
 upload technology.
