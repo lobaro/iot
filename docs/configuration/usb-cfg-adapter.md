@@ -15,8 +15,8 @@ The Lobaro USB configuration adapters connects the configuration serial uart of 
 ## Adapter V1
 
 <Image alt='Lobaro USB Configuration Adapter V1'
-img={require('./img/Lobaro-KonfigAdapter-Anot.jpg')}
-style={{width:'90%',paddingTop:'5px',paddingBottom:'5px'}} />
+img={require('./img/8000005_Lobaro_Configuration Adapter.jpg')}
+style={{width:'30%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 ### Order-Code
 
@@ -60,6 +60,10 @@ style={{width:'100%',paddingTop:'10px',paddingBottom:'20px'}} />
 ### Connector Type
 The USB adapter uses a six-wire [JST-ZH series connector](https://www.jst-mfg.com/product/index.php?series=287) for
 attaching to Lobaro hardware at the config connector.
+
+<Image alt='Lobaro USB Configuration Adapter V1'
+img={require('./img/Lobaro-KonfigAdapter-Anot.jpg')}
+style={{width:'90%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 ### Control Lines
 

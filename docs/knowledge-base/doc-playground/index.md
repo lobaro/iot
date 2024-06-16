@@ -4,15 +4,16 @@ Location to showcase features and examples for writing content in this doc with 
 
 * [**Official Docs**](https://docusaurus.io/docs)
 
-<Image alt='Docusaurus'
+<Image alt='docusaurus'
 img={require('@site/static/img/docusaurus.png')}
-style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}} />
+style={{width:'10%',paddingTop:'10px',paddingBottom:'10px'}} />
 
-```jsx title="Include images with absolute paths and CamelCase css styles"
-<Image alt='Docusaurus' 
-       img={require('@site/static/img/docusaurus.png')} 
-       style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}} />
+```jsx title="Include images with absolute paths"
+<Image alt='docusaurus'
+       img={require('@site/static/img/docusaurus.png')}
+       style={{width: '10%', paddingTop: '10px', paddingBottom: '10px'}}/>
 ```
+
 ## Images
 
 ### Center Align
@@ -20,12 +21,12 @@ style={{width:'10%',paddingTop:'10px',paddingBottom:'20px'}} />
 A dangerous plant:
 <Image alt='A dangerous plant'
 img={require('./img/plant.jpg')}
-style={{width:'75%',padding:'20px',marginInline: 'auto'}} />
+style={{width:'75%',padding:'10px',marginInline: 'auto'}} />
 
-```jsx title="Include centered images with relative paths"
-<Image alt='A dangerous plant' 
-       img={require('./img/plant.jpg')} 
-       style={{width:'85%',padding:'20px',marginInline: 'auto'}} /><
+```jsx title="Include centered images with relative paths and CamelCase css styles"
+<Image alt='A big dangerous plant'
+       img={require('./img/plant.jpg')}
+       style={{width: '85%', padding: '10px', marginInline: 'auto'}}/>
 ```
 
 :::info
@@ -48,7 +49,16 @@ Line 4
 ```jsx title="small image on the right"
 <Image alt='A super small image of a dangerous plant'
        img={require('./img/plant.jpg')}
-       style={{width:'20%',padding:'10px',float:'right'}} />
+       style={{width: '20%', padding: '10px', float: 'right'}}/>
+
+Line
+1
+Line
+2
+Line
+3
+Line
+4
 ```
 
 ## Line Breaks
@@ -60,14 +70,15 @@ The make a line break these options exit:
 3. Add a `backslash`  (`\) at the end of a line
 
 ## Code Blocks
+
 * [Docusaurus Doc](https://docusaurus.io/docs/markdown-features/code-blocks)
 * [Supported Languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9-L23)
 
 ````md title="Code block for plant image"
 ```jsx title="Include images with relative paths"
-<Image alt='A dangerous plant' 
-       img={require('./img/plant.jpg')} 
-       style={{width:'85%',padding:'10px'}} /> 
+<Image alt='A super small image of a dangerous plant'
+       img={require('./img/plant.jpg')}
+       style={{width:'20%',padding:'10px',float:'right'}} />
 ```
 ````
 
@@ -116,6 +127,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 ```
 
 ## Tabs
+
 <Tabs>
     <TabItem value="apple" label="Apple" default>
         This is an apple 🍎
@@ -141,47 +153,39 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
     </TabItem>
 </Tabs>
 ```
+
 ## Tables
 
-## Allocation Table
+| Block  | Address | Device | Remark |
+|:-------|:-------:|:-------|:-------|
+| Lobaro | `0x10`  | xxxx   |        |
+| Lobaro | `0x11`  | xxxx   |        |
+| Lobaro | `0x18`  | xxxx   |        |
 
-| Block          | Address | Device          | Remark                             |
-| :------------- | :-----: | :-------------- | :--------------------------------- |
-| CHESTER-Z1     | `0x10`  | STM32L0         |                                    |
-| CHESTER-S1     | `0x11`  | STM32L0         |                                    |
-| CHESTER-M      | `0x18`  | DS2484          |                                    |
-| CHESTER-M      | `0x19`  | LIS2DH12        |                                    |
-| CHESTER-X8     | `0x1d`  | ADXL355         |                                    |
-| CHESTER-X0     | `0x20`  | PCAL6416A       | Address in slot A                  |
-| CHESTER-X0     | `0x21`  | PCAL6416A       | Address in slot B                  |
-| CHESTER-R1     | `0x38`  | TCA9534A        |                                    |
-| CHESTER-X6     | `0x39`  | TCA9534A        |                                    |
-| CHESTER-A      | `0x3a`  | TCA9534A        |                                    |
-| CHESTER-G      | `0x3b`  | TCA9534A        |                                    |
-| CHESTER-G      | `0x3c`  | TCA9534A        |                                    |
-| CHESTER-K1     | `0x3d`  | TCA9534A        |                                    |
-| CHESTER-C1     | `0x3e`  | TCA9534A        |                                    |
-| CHESTER-B1     | `0x3e`  | TCA9534A        |                                    |
-| CHESTER-B1     | `0x3f`  | TCA9534A        |                                    |
-| CHESTER-X5     | `0x40`  | ADS122C04       | Address in slot A                  |
-| CHESTER-X5     | `0x41`  | ADS122C04       | Address in slot B                  |
-| CHESTER-M      | `0x42`  | CAM-M8Q         |                                    |
-| CHESTER-M      | `0x44`  | SHT30           | Not populated by default           |
-| CHESTER-S2     | `0x45`  | SHT30           | External sensor                    |
-| CHESTER-X3     | `0x46`  | ADS122C04 - CH1 | Address in slot A                  |
-| CHESTER-X3     | `0x47`  | ADS122C04 - CH2 | Address in slot A                  |
-| CHESTER-M      | `0x48`  | TMP112          |                                    |
-| CHESTER-X4     | `0x49`  | TLA2021         |                                    |
-| CHESTER-X10    | `0x49`  | TLA2024         |                                    |
-| CHESTER-X3     | `0x4a`  | ADS122C04 - CH1 | Address in slot B                  |
-| CHESTER-M      | `0x4b`  | TLA2021         |                                    |
-| CHESTER-V1     | `0x4c`  | SC16IS740       |                                    |
-| CHESTER-X6     | `0x4d`  | SC16IS740       |                                    |
-| CHESTER-B1     | `0x4e`  | SC16IS740       |                                    |
-| CHESTER-X3     | `0x4f`  | ADS122C04 - CH2 | Address in slot B                  |
-| CHESTER-X2     | `0x50`  | SC16IS740       | Address in slot A                  |
-| CHESTER-X2     | `0x51`  | SC16IS740       | Address in slot B                  |
-| CHESTER-M      | `0x64`  | ATSHA204A       | Removed in CHESTER-M R3.3          |
-| People Counter | `0x7f`  | People Counter  | Proprietary module of Adastra Labs |
+```markdown title="Tables"
+| Block  | Address | Device | Remark            |
+|:-------|:-------:|:-------|:------------------|
+| Lobaro | `0x10`  | xxxx   |                   |
+| Lobaro | `0x11`  | xxxx   |                   |
+| Lobaro | `0x18`  | xxxx   |                   |
+```
 
+### Controlled column width
 
+| Cron definition <div style={{width:'200px'}}/> | Description                                                                                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
+| ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
+| ` 0 0 1 ? * 2L       `                         | 1am on the last Tuesday of each month.                                                                                                                 |
+| ` H H H(0-2) * * *   `                         | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
+| ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
+
+```markdown title="Tables"
+| Cron definition <div style={{width:'200px'}}/> | Description                                                                                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
+| ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
+| ` 0 0 1 ? * 2L       `                         | 1am on the last Tuesday of each month.                                                                                                                 |
+| ` H H H(0-2) * * *   `                         | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
+| ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
+```

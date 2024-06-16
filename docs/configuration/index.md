@@ -4,25 +4,31 @@ sidebar_position: 0
 
 # Introduction
 
-Lobaro devices allow a wide range of configuration adjustments.
-This page describes the some generally valid parameters that are used in the same way for Lobaro devices,
-although not all products have to support all parameters listed here.
-All configuration parameters are stored non-volatile in the Lobaro devices.
+Lobaro devices allow a wide range of internal configuration adjustments.
+These chapter describes some generally valid tools and parameters that are used in the same way for many Lobaro devices.
+All configuration parameters are stored non-volatile independently of the power supply in the Lobaro devices.
 
-Device-specific parameters are explained in the respective documentation.
+Device and firmware specific parameters are explained in the respective documentation.
 
 ## How to configure
 
 <Image alt='Lobaro Configuration Tool'
 img={require('./img/Lobaro-Config-in-Log.png')}
-style={{width:'90%',paddingTop:'5px',paddingBottom:'5px'}} />
+style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 Any Lobaro device configuration can be set and read out either locally via a PC with the [Lobaro configuration USB
-adapter](./usb-cfg-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md) or remotely when using the Lobaro IoT platform and mobile radio (NB-IoT, LTE-M)
-or any LoRaWAN network server using downlinks on a special port. Network parameters, such as the APN of the mobile
-cellular network provider, must usually first be configured correctly locally.
+adapter](./usb-cfg-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md) or over the air remotely
+using the Lobaro IoT platform and mobile radio (NB-IoT, LTE-M) or any LoRaWAN network server using downlinks on the
+special cfg port.
 
-Alternatively, possible on request for
-larger orders, an customer specific configuration agreed with the customer can also be installed by Lobaro during
+<Image alt='Lobaro Platform Configuration Tab'
+img={require('./img/configuration-example-lobaro-platform.png')}
+style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
+
+Some network related parameters, such as the APN of the mobile cellular network provider, must usually
+first be configured correctly locally before the device can get online.
+
+Alternatively, possible on request for larger orders, an customer specific configuration agreed with the customer can
+also be installed by Lobaro during
 production provisioning.
 
