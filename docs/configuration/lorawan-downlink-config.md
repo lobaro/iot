@@ -1,5 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
+displayed_sidebar: configurationSidebar
+title: LoRaWAN Downlink Config
 ---
 
 # LoRaWAN Downlink Config
@@ -176,7 +178,7 @@ In The Things Network you find the downlink panel on the "Device Overview" page 
 panel that shows you OTAA/ABP information (DevEUI, AppKey, ...). It is shown in the following screenshot.
 
 <Image alt='TTN LoRaWAN downlink configuration'
-img={require('./img/ttn-downlink.png')}
+img={require('./img/downlink-cfg/ttn-downlink.png')}
 style={{width:'60%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 You will have to encode the commands in hex. In the screenshot you see `73 54 69 6d 65 53 79 6e 63 3d 31 30` as the
@@ -192,13 +194,13 @@ For this example the "Request firmware and version" `?` (0x3F) command has to us
 #### Downlink on TTN
 
 <Image alt='TTN LoRaWAN downlink get firmware version'
-img={require('./img/Downlink-TTN-get-fw.png')}
+img={require('./img/downlink-cfg/Downlink-TTN-get-fw.png')}
 style={{width:'50%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 Will result in:
 
 <Image alt='TTN LoRaWAN downlink get firmware version'
-img={require('./img/lorawan-downlink-3F-downlink.png')}
+img={require('./img/downlink-cfg/lorawan-downlink-3F-downlink.png')}
 style={{width:'50%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 #### Uplink on TTN
@@ -206,14 +208,14 @@ style={{width:'50%',paddingTop:'5px',paddingBottom:'5px'}} />
 The device answers with this uplink:
 
 <Image alt='TTN LoRaWAN uplink get firmware version'
-img={require('./img/lorawan-downlink-3F-answer.png')}
+img={require('./img/downlink-cfg/lorawan-downlink-3F-answer.png')}
 style={{width:'95%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 This response can be converted to ASCII again, e.g. using
 any [online converter](https://www.rapidtables.com/convert/number/hex-to-ascii.html):
 
 <Image alt='TTN LoRaWAN uplink to ascii conversion get firmware version'
-img={require('./img/3F-result-in-ascii.png')}
+img={require('./img/downlink-cfg/3F-result-in-ascii.png')}
 style={{width:'30%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 The result is: `?app-hybrid-modbus v0.4.0+battery`

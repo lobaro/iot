@@ -119,19 +119,26 @@ const config: Config = {
           position: 'right',
           label: 'Knowledge Base',
         },
-        {
+     {
           type: 'docSidebar',
           sidebarId: 'allDocSidebar',
           position: 'right',
           label: 'All Docs',
         },
       /*  {to: '/blog', label: 'Blog', position: 'left'},*/
-        {
+       /* {
           href: 'https://github.com/lobaro/iot',
           label: 'GitHub',
           position: 'right',
         },
+          */
+        {
+          href: 'https://www.lobaro.de',
+          label: 'Lobaro Homepage',
+          position: 'right',
+        },
       ],
+
     },
     footer: {
       copyright: `<div style="font-size: small">Copyright © <a href="https://www.lobaro.de" target="_blank">Lobaro GmbH</a> ${new Date().getFullYear()} | Stadtdeich 7 | D-20097 Hamburg | Germany | <a href="mailto:support@lobaro.de">support@lobaro.de</a> | <a href="https://www.lobaro.com/en/contact/" target="_blank">Legal Disclosure</a></div>`

@@ -33,11 +33,13 @@ style={{width:'75%',padding:'10px',marginInline: 'auto'}} />
 Images get automatically resized by Docusaurus and must not resized manually to support faster loading of the static
 page. The original plant image is 4.5 MB in size, Docusaurus' ideal-image plugin reduced the size to 272 kB. This
 mechanism also depends on the requested width.
+
+Images should be stored nearby their markdown files in a `./img` folder.
 :::
 
 ### Align Right with text
 
-<Image alt='A super small image of a dangerous plant'
+<Image alt='A tiny image of a dangerous plant'
 style={{width:'15%',padding:'10px',float:'right'}}
 img={require('./img/plant.jpg')}/>
 
@@ -47,7 +49,7 @@ Line 3
 Line 4
 
 ```jsx title="small image on the right"
-<Image alt='A super small image of a dangerous plant'
+<Image alt='A tiny image of a dangerous plant'
        img={require('./img/plant.jpg')}
        style={{width: '20%', padding: '10px', float: 'right'}}/>
 
@@ -170,18 +172,18 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 | Lobaro | `0x18`  | xxxx   |                   |
 ```
 
-### Controlled column width
+### Controlled widths of columns
 
-| Cron definition | Description                                                                                                                                            |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ` 0 0 11 1W,15W * *  `                        | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
-| ` 0 0 15 1,L * *     `                        | 3pm on the first and last day of each month.                                                                                                           |
-| ` 0 0 1 ? * 2L       `                        | 1am on the last Tuesday of each month.                                                                                                                 |
-| ` H H H(0-2) * * *   `                        | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
-| ` H H(0-9)/10 * * * *`                        | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
+| Cron definition <div style={{width:'185px'}}/> | Description                                                                                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
+| ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
+| ` 0 0 1 ? * 2L       `                         | 1am on the last Tuesday of each month.                                                                                                                 |
+| ` H H H(0-2) * * *   `                         | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
+| ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
 
-```markdown title="Tables"
-| Cron definition | Description                                                                                                                                            |
+```markdown title="Table with fixed width of first column"
+| Cron definition <div style={{width:'185px'}}/> | Description                                                                                                                                            |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ` 0 0 11 1W,15W * *  `                         | 11am on the days closest to the 1st and the 15th day each month that are not Saturdays or Sundays.                                                     |
 | ` 0 0 15 1,L * *     `                         | 3pm on the first and last day of each month.                                                                                                           |
@@ -189,3 +191,6 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 | ` H H H(0-2) * * *   `                         | Every day at a fixed pseudo random time between 00:00:00 and 02:59:59.Same time each day for a given device, but different time for different devices. |
 | ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
 ```
+
+By using the `div` tag no unwanted line breaks happen, which in this example case would lead too hard to read CRON
+definitions.

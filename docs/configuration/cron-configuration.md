@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
+displayed_sidebar: configurationSidebar
+title: CRON Configuration
 ---
 
 # CRON Configuration
@@ -27,7 +29,7 @@ Example for Central Europe:
 * Summer: UTC+2 (Central European Summer Time)
   :::
 
-## Meaning of the six fields
+## Meaning of the six field parameter
 
 `0 0/15 * * * *` - time points every 15 minutes starting from minute 0.
 

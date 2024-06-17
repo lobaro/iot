@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+displayed_sidebar: configurationSidebar
+title: Lobaro USB Config Adapter
 ---
 
 # Lobaro USB Config Adapter
@@ -10,12 +12,12 @@ The Lobaro USB configuration adapters connects the configuration serial uart of 
 * Viewing firmware log/debug diagnostic output
 * Firmware updates
 * Powering some of our devices (Boot and Reset must be disconnected to use as USB power supply)
-* using our free [Lobaro Maintenance Tool](./lobaro-tool/index.md) PC software.
+* using our free [Lobaro Maintenance Tool](./lobaro-config-tool.md) PC software.
 
 ## Adapter V1
 
 <Image alt='Lobaro USB Configuration Adapter V1'
-img={require('./img/8000005_Lobaro_Configuration Adapter.jpg')}
+img={require('./img/config-adapter/8000005_Lobaro_Configuration Adapter.jpg')}
 style={{width:'30%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 ### Order-Code
@@ -37,7 +39,7 @@ the [Silicon Labs Homepage](https://www.silabs.com/developers/usb-to-uart-bridge
 ### Physical connection
 
 <Image alt='Connection example lobaro usb configuration adaptr'
-img={require('./img/adapter1low.jpg')}
+img={require('./img/config-adapter/adapter1low.jpg')}
 style={{width:'40%',paddingTop:'10px',paddingBottom:'20px'}} />
 
 Connect your Lobaro Device to the USB-port of your computer using the Lobaro Config Adapter. The 6-pin connector must be
@@ -54,7 +56,7 @@ sure you have the device powered!
 ### Schematic
 
 <Image alt='Schematic Lobaro USB Configuration Adapter V1'
-img={require('./img/config-adapter-schematic.png')}
+img={require('./img/config-adapter/config-adapter-schematic.png')}
 style={{width:'100%',paddingTop:'10px',paddingBottom:'20px'}} />
 
 ### Connector Type
@@ -62,7 +64,7 @@ The USB adapter uses a six-wire [JST-ZH series connector](https://www.jst-mfg.co
 attaching to Lobaro hardware at the config connector.
 
 <Image alt='Lobaro USB Configuration Adapter V1'
-img={require('./img/Lobaro-KonfigAdapter-Anot.jpg')}
+img={require('./img/config-adapter/Lobaro-KonfigAdapter-Anot.jpg')}
 style={{width:'90%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 ### Control Lines

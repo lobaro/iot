@@ -1,5 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
+displayed_sidebar: configurationSidebar
+title: Lobaro Config Tool
 ---
 
 # Lobaro Config Tool
@@ -9,8 +11,20 @@ The Lobaro Config Tool (a.k.a. Lobaro Maintenance Tool) can be used to configure
 operating systems.
 
 <Image alt='Lobaro Configuration Tool'
-img={require('./img/Lobaro_Tool_ConfigFeature.png')}
+img={require('./img/lobaro-tool/Lobaro_Tool_ConfigFeature.png')}
 style={{width:'60%',paddingTop:'5px',paddingBottom:'5px'}} />
+
+## Download
+
+See: [https://github.com/lobaro/flash-tool-release/releases](https://github.com/lobaro/flash-tool-release/releases)
+
+:::tip[Select correct Download for your OS]
+
+* Windows: `...windows_x86_64.zip`
+* Linux: `...linux_x86_64.zip`
+* macOS (ARM): `...mac_arm64.zip`
+* macOS (INTEL): `...mac_x86_64.zip`
+  :::
 
 ## System Requirements
 
@@ -34,18 +48,6 @@ The default uart configuration is:
 * 1 stop bot
 
 This UART configuration is used by **all Lobaro devices** on the "Config" port.
-
-## Download
-
-* [https://github.com/lobaro/flash-tool-release/releases](https://github.com/lobaro/flash-tool-release/releases)
-
-:::tip[Correct Download for your OS]
-
-* Windows: `...windows_x86_64.zip`
-* Linux: `...linux_x86_64.zip`
-* macOS (ARM): `...mac_arm64.zip`
-* macOS (INTEL): `...mac_x86_64.zip`
-  :::
 
 ## Installation
 
@@ -75,7 +77,7 @@ Connect your Lobaro Device using the [Lobaro Config Adapter](../usb-config-adapt
 When your device is successfully attached to your computer, you can build a connection with the Lobaro Maintenance Tool.
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
-img={require('./img/tool-connect-auto.png')}
+img={require('./img/lobaro-tool/tool-connect-auto.png')}
 style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 Under Hardware Connection select _auto_ and click _Connect_, as seen in the screenshot above. If you know to which port
@@ -86,7 +88,7 @@ auto.
 ## Device Configuration
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
-img={require('./img/tool-config-loaded.png')}
+img={require('./img/lobaro-tool/tool-config-loaded.png')}
 style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 When you are connected to a Lobaro Device, you can use the Tab named **CONFIGURATION** to read and change the
@@ -122,7 +124,7 @@ You can watch the rebooting of the Device and check the altered configuration pa
 ## Device Uart Logging
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
-img={require('./img/tool-config-logs.png')}
+img={require('./img/lobaro-tool/tool-config-logs.png')}
 style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 All of our Devices provide extensive logging information over the CONFIG port. When you are connected to a Device in the
@@ -146,7 +148,7 @@ useful when you start working with your device or if you try to fix issues with 
 ### Log-Files
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
-img={require('./img/tool-show-logfiles.png')}
+img={require('./img/lobaro-tool/tool-show-logfiles.png')}
 style={{width:'25%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 The logs are also written to files on your computer. Every time you start the Lobaro Maintenance Tool, a new log file is
@@ -195,7 +197,7 @@ version 0.3.1.
 ### Installing new firmware
 
 <Image alt='Lobaro Configuration Tool - Flash new firmware'
-img={require('./img/tool-config-flash.png')}
+img={require('./img/lobaro-tool/tool-config-flash.png')}
 style={{width:'60%',paddingTop:'10px',paddingBottom:'10px'}} />
 
 Make sure your Device is successfully attached to your computer and the Maintenance Tool is connected, as described

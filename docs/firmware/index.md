@@ -1,8 +1,10 @@
 ---
 sidebar_position: 0
+displayed_sidebar: firmwareSidebar
+title: Overview
 ---
 
-# Introduction
+# Firmware Overview
 
 :::info
 This new documentation center is currently work in progress

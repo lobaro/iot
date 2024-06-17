@@ -1,8 +1,10 @@
 ---
 sidebar_position: 0
+displayed_sidebar: configurationSidebar
+title: Overview
 ---
 
-# Introduction
+# Device Configuration Overview
 
 Lobaro devices allow a wide range and flexible way of internal configuration adjustments.
 These chapter generally describes our tools, common configuration parameters and workflows that are used in the same way
@@ -22,7 +24,7 @@ be a feasible way to go.
 ### Locally
 
 Any Lobaro device configuration can be set and read out locally via a PC with the [Lobaro configuration USB
-adapter](./usb-config-adapter) and the [Lobaro Maintenance Tool](./lobaro-tool/index.md).
+adapter](./usb-config-adapter) and the [Lobaro Maintenance Tool](./lobaro-config-tool.md).
 
 <Image alt='Lobaro Configuration Tool'
 img={require('./img/Lobaro-Config-in-Log.png')}
