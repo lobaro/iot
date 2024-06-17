@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+draft: true
+---
 # Docusaurus Playground
 
 Location to showcase features and examples for writing content in this doc with is based on Docusaurus.
