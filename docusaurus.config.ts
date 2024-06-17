@@ -91,6 +91,12 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
+          sidebarId: 'configurationSidebar',
+          position: 'left',
+          label: 'Configuration',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'firmwareSidebar',
           position: 'left',
           label: 'Firmware',
@@ -100,12 +106,6 @@ const config: Config = {
           sidebarId: 'hardwareSidebar',
           position: 'left',
           label: 'Hardware',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'configurationSidebar',
-          position: 'left',
-          label: 'Configuration',
         },
         {
           type: 'docSidebar',

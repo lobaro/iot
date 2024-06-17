@@ -4,9 +4,9 @@ displayed_sidebar: configurationSidebar
 title: Overview
 ---
 
-# Device Configuration Overview
+# Configuration Overview
 
-Lobaro devices allow a wide range and flexible way of internal configuration adjustments.
+The device configuration allows a wide range and flexible way of internal settings adjustments for Lobaro hardware.
 These chapter generally describes our tools, common configuration parameters and workflows that are used in the same way
 for many
 Lobaro devices to adjust the used configuration.
