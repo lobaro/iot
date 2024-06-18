@@ -54,6 +54,10 @@ style={{width:'20%',paddingTop:'5px',paddingBottom:'5px'}} />
 * Manufacturer specific radio protocol for 868 MHz (Xylem Inc.).
 * ⚠️ Decoding of Sensus RF telegrams needs the Lobaro telegram parser and unfortunately can't be disclosed.
 
+<a target="\_blank" href={require('./files-tr/en---sensusrf-brochure-2.pdf').default}><Image alt='PDF Download'
+img={require('@site/static/img/pdf.png')}
+style={{width: '32px', paddingTop: '10px', paddingBottom: '10px'}}/>Download this PDF </a>
+
 ### ME-Funk
 
 * A.k.a. "Müller Funk" - Manufacturer specific radio protocol for 868 MHz (Müller-electronic GmbH).

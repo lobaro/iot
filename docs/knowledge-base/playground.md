@@ -210,6 +210,6 @@ By using the `div` tag no unwanted line breaks happen, which in this example cas
 definitions.
 
 ## File Downloads
-<a target="\_blank" href={require('./img/en---sensusrf-brochure.pdf').default}><Image alt='PDF Download'
+<a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}><Image alt='PDF Download'
 img={require('@site/static/img/pdf.png')}
 style={{width: '32px', paddingTop: '10px', paddingBottom: '10px'}}/>Download this PDF </a>
