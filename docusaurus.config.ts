@@ -91,15 +91,15 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'configurationSidebar',
-          position: 'left',
-          label: 'Configuration',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'firmwareSidebar',
           position: 'left',
           label: 'Firmware',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'configurationSidebar',
+          position: 'left',
+          label: 'Configuration',
         },
         {
           type: 'docSidebar',
