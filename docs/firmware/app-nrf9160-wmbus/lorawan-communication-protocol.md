@@ -1,8 +1,8 @@
 ---
 sidebar_position: 5
 displayed_sidebar: firmwareSidebar
-title: LoRaWAN Payload Formats
+title: LoRaWAN Communication
 ---
 
-# LoRaWAN Payload Formats
+# LoRaWAN Communication
 

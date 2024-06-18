@@ -9,7 +9,7 @@ title: LTE Network Configuration
 In order for the Lobaro devices to be able to dial into the mobile network, it may be necessary to configure the network
 related parameters correctly.
 
-:::tip
+:::info
 Lobaro devices normally perform a network selection based on the profile stored on the SIM card inserted in the device.
 This means that in most case the mobile `operator` and `band` **have
 not** to be configured since the devices perform an autodetect based on internal metrics. In some cases it may be

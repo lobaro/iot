@@ -14,7 +14,7 @@ valid for all products independently which hardware it actually runs on.
 
 <Image alt='Lobaro wireless M-BUS Gateway firmware'
 img={require('./img/wmbus-gateway-bridge-lora-nb-iot.jpg')}
-style={{width:'70%',paddingTop:'5px',paddingBottom:'5px'}} />
+style={{width:'80%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 The Lobaro wireless M-Bus gateways collect consumption values from up to 650(*) commercially available water
 meters, heat
@@ -53,6 +53,7 @@ style={{width:'20%',paddingTop:'5px',paddingBottom:'5px'}} />
 ### Sensus RF Bubble UP
 
 * Manufacturer specific radio protocol for 868 MHz (Xylem Inc.).
+* Unidirectional bubble up mode is supported.
 * ⚠️ Decoding of Sensus RF telegrams needs the Lobaro telegram parser and unfortunately can't be disclosed.
 
 <table><tr>
