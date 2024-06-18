@@ -188,7 +188,7 @@ per day.
 | ` H H(0-9)/10 * * * *`                         | Every 10 minutes, but at a fixed time, randomly but consistently picked for each device.                                                               |
 
 :::info
-The Extended CRON Syntax will only work on recent firmware versions, e.g. the wMBus Gateways V3 versions 0.15.4 and
+The Extended CRON Syntax will only work on recent firmware versions, e.g. the `app-nrf9160-wmbus` firmware versions 0.15.4 and
 newer.
 Check the specific product manual to see if the extended syntax is implemented in the firmware.
 :::

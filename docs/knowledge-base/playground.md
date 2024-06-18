@@ -2,6 +2,7 @@
 sidebar_position: 99
 draft: false
 ---
+
 # Docusaurus Playground
 
 Location to showcase features and examples for writing content in this doc with is based on Docusaurus.
@@ -21,8 +22,6 @@ style={{width:'10%',paddingTop:'10px',paddingBottom:'10px'}} />
        img={require('@site/static/img/docusaurus.png')}
        style={{width: '10%', paddingTop: '10px', paddingBottom: '10px'}}/>
 ```
-
-
 
 ## Images
 
@@ -210,6 +209,25 @@ By using the `div` tag no unwanted line breaks happen, which in this example cas
 definitions.
 
 ## File Downloads
-<a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}><Image alt='PDF Download'
-img={require('@site/static/img/pdf.png')}
-style={{width: '32px', paddingTop: '10px', paddingBottom: '10px'}}/>Download this PDF </a>
+
+Files should be placed nearby the doc source files in a `./files` directory.
+
+<table><tr>
+    <td><Image alt='PDF Download' img={require('@site/static/img/pdf.png')} style={{width: '32px'}}/></td>
+    <td><a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}>Download this PDF </a></td>
+</tr></table>
+
+```jsx title="Download"
+<table><tr>
+    <td><Image alt='PDF Download' img={require('@site/static/img/pdf.png')} style={{width: '32px'}}/></td>
+    <td><a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}>Download this PDF </a></td>
+</tr></table>
+```
+
+## Horizontal Rule
+
+---
+
+```markdown title="Three dashes form a horizontal rule in md"
+---
+```

@@ -10,7 +10,7 @@ This page describes the Lobaro wireless M-Bus gateway firmware, called `app-nrf9
 different hardware variants which are in turn used to build different products. Nevertheless, this common description is
 valid for all products independently which hardware it actually runs on.
 
-## Application Overview
+## Firmware Introduction
 
 <Image alt='Lobaro wireless M-BUS Gateway firmware'
 img={require('./img/wmbus-gateway-bridge-lora-nb-iot.jpg')}
@@ -48,20 +48,25 @@ style={{width:'20%',paddingTop:'5px',paddingBottom:'5px'}} />
 
 * Unidirectional 868 MHz modes following DIN EN 13757-4.
 * Open metering specification (OMS, Annex O): PHY_A - 868 MHz (uplink only)
+* Qundis AMR
 
 ### Sensus RF Bubble UP
 
 * Manufacturer specific radio protocol for 868 MHz (Xylem Inc.).
 * ⚠️ Decoding of Sensus RF telegrams needs the Lobaro telegram parser and unfortunately can't be disclosed.
 
-<a target="\_blank" href={require('./files-tr/en---sensusrf-brochure-2.pdf').default}><Image alt='PDF Download'
-img={require('@site/static/img/pdf.png')}
-style={{width: '32px', paddingTop: '10px', paddingBottom: '10px'}}/>Download this PDF </a>
+<table><tr>
+    <td><Image alt='PDF Download' img={require('@site/static/img/pdf.png')} style={{width: '32px'}}/></td>
+    <td><a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}>Sensus RF Brochure</a></td>
+</tr></table>
 
 ### ME-Funk
 
-* A.k.a. "Müller Funk" - Manufacturer specific radio protocol for 868 MHz (Müller-electronic GmbH).
+* A.k.a. "Müller Funk" - Manufacturer specific radio protocol for 868
+  MHz ([Müller-electronic GmbH](https://www.mue-line.de/allgemeine-informationen/)).
 * ⚠️ Decoding of ME-Funk telegrams needs the Lobaro telegram parser and unfortunately can't be disclosed.
+
+---
 
 :::info
 433 MHz variants are available on products equipped with the additional 433 MHz hardware addon for the following
@@ -71,7 +76,7 @@ specifications:
 * Sensus RF Bubble UP 433 MHz - Manufacturer specific (Xylem Inc.) radio protocol
   :::
 
-## Firmware Workflow
+## Working Principle
 
 The firmware remains in power-saving mode while not active most of the time. It leaves the low power sleep mode in the
 following situations:
@@ -107,13 +112,17 @@ This sequence also will be executed one after any device startup oder manual res
 All meter telegrams are received "as is", e.g. encrypted or plain over the air. Only the always readable telegram header
 information is parsed for internal filtering and deduplication. Parsing and decryption of such raw metering data happens
 in the backend, e.g. in
-the Lobaro head end system or any other connected system.  
-Lobaro offers a standalone [REST API](https://www.mbus.org) for raw wireless M-BUS telegrams parsing.
+the Lobaro head end system or any other connected system. Lobaro offers a standalone [REST API (www.mbus.org)](https://www.mbus.org)
+for raw (wireless) M-BUS telegrams parsing which can be licensed.
 :::
 
 ### Daily Status Message
 
-* Upload status telegram normally at midnight 0:00h (UTC+0)
-    * Solar-powered hardware variants: noon 12:00h (UTC+0)
-* Upload remaining telegrams in memory, if any
-* Sleep till next `listenCron` or status telegram upload.
+Once a day the firmware sends a status message. This allows for reaching the device, e.g. for changing the
+configuration, at least once a day independent of the configured regular scan interval (see above). This status message
+contains information on many vital parameters of the gateway.
+
+* Upload status telegram normally at midnight **0:00h (UTC+0)**
+    * Solar-powered hardware variants: noon **12:00h (UTC+0)**
+* Upload remaining telegrams in memory, if any failures happened during previous attempts.
+* Sleep till next `listenCron` or next days status telegram.

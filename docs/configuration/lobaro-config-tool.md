@@ -24,7 +24,7 @@ See: [https://github.com/lobaro/flash-tool-release/releases](https://github.com/
 * Linux: `...linux_x86_64.zip`
 * macOS (ARM): `...mac_arm64.zip`
 * macOS (INTEL): `...mac_x86_64.zip`
-  :::
+:::
 
 ## System Requirements
 

@@ -1,0 +1,198 @@
+---
+sidebar_position: 1
+displayed_sidebar: firmwareSidebar
+title: Configuration Parameter
+---
+
+# Configuration
+
+On this page all possible configuration parameter of the firmware are presented. Usually the internal defaults work
+quite well to get the device up and running.
+
+:::note[Customer specific configuration]
+For larger orders Lobaro can apply a custom customer specific configuration for all parameter before
+delivery.
+:::
+
+## Firmware Configuration Parameter
+
+### General
+
+| Description                                  | Key                      | Type   | Possible Values   | Default |
+|:---------------------------------------------|:-------------------------|--------|-------------------|:-------:|
+| LTE / LoRaWAN Selection                      | <a href='#wan'>`WAN`</a> | String | `true` or `false` |  `lte`  |
+| Days without Connectivity until Device Reset | `LostReboot   `          | Number | Any, e.g. `3`     |   `5`   |
+
+#### `WAN`{#wan}
+
+Technology used for connection and data uplinks to backend. This can be either cellular LTE (NB-IoT, LTE-M) or LoRaWAN
+<Image alt='Lobaro Hybrid Connectivity LoRaWAN, NB-IoT, LTE-M'
+img={require('./img/Hybrid-Connectivity-highRes.png')}
+style={{width:'30%',paddingTop:'5px',paddingBottom:'5px'}} />
+
+* **lte**: use either cellular NB-IoT or LTE-M
+* **lorawan**: use LoRaWAN with OTAA
+
+:::note
+All Lobaro products can be switched between mobile radio operation and LoRaWAN using this parameter alone.
+:::
+
+### Meter Scanning
+
+| Description                     | Key                                        | Type   | Possible Values                                                        | Default        |  
+|:--------------------------------|:-------------------------------------------|--------|------------------------------------------------------------------------|----------------|
+| WMBUS Listen Cron [UTC+0]       | <a href='#listencron'>`listenCron   `</a>  | String | Any [CRON](configuration/cron-configuration.md) String                 | `0 0 12 * * *` |
+| WMBUS C1/T1 Listen Duration [s] | <a href='#durations'>`cmodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect C1/T1<br/>Max Value=`36000`  | `300`          |
+| WMBUS S1 Listen Duration [s]    | <a href='#durations'>`smodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect S1<br/>Max Value=`36000`     | `0`            |
+| Sensus RF Listen Duration [s]   | <a href='#durations'>`xmodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect X-Mode<br/>Max Value=`36000` | `0`            |
+| Müller-Funk Listen Duration [s] | <a href='#durations'>`umodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect U-Mode<br/>Max Value=`36000` | `0`            |
+| WMBUS ID Filter List            | <a href='#filter'>`devFilter`</a>          | String | List, e.g.<br/>`88009035,13456035`                                     | `[not set]`    |
+| WMBUS Type Filter List          | <a href='#filter'>`typFilter    `</a>      | String | List, e.g.<br/>`08,07`                                                 | `[not set]`    |
+| WMBUS M-Field Filter List       | <a href='#filter'>`mFilter      `</a>      | String | List, e.g.<br/> `DME,ITW,SEN,QDS`                                      | `[not set]`    |
+| WMBUS CI-Field Filter List      | <a href='#filter'>`ciFilter`</a>           | String | List, e.g.<br/>`8a,72`                                                 | `[not set]`    |
+| WMBUS Telegram Upload Limit     | <a href='#maxtelegrams'>`maxTelegrams`</a> | Number | Any number of max. Telegrams<br/>`0` = no limit.                       | `0`            |
+
+#### `listenCron`{#listencron}
+
+The listen cron defines when the device wakes up to receive the enabled wireless M-BUS and other radio protocols. Each
+listen period is followed by uploading the data over the configured WAN technology. The interval strongly depends on the
+products power supply and the application demand of new metering data. Typical values range from every 15 minutes to 14
+days.
+
+:::tip[in depth description]
+[Read more](configuration/cron-configuration.md) about CRON configuration parameterization.
+:::
+
+---
+
+#### `cmodeDurSec` `smodeDurSec` `xmodeDurSec` `umodeDurSec` {#durations}
+
+Duration in seconds, e.g. `300` (5 minutes), to collect metering data in corresponding wireless protocol. All list
+periods are executed one after the other for the time period defined by the respective parameter.
+
+---
+
+#### `devFilter` `ciFilter` `mFilter` `typFilter` {#filter}
+
+Filter meters to be be collected and uploaded by wireless M-BUS related fields.
+
+:::tip[in depth description]
+[Read more](configuration/meter-reception-filter-config.md) about telegram filtering.
+:::
+
+---
+
+#### `maxTelegrams`{#maxtelegrams}
+
+Set hard limit on how many telegrams will be collected and uploaded. The firmware will stop collection, once this number
+has been collected, regardless of the passed time. Can be used save battery / data volume, should the device be in an
+area with a large number of meters.
+
+### LTE Connection
+
+| Description              | Key                                         | Type     | Possible Values            | Default                       |  
+|:-------------------------|:--------------------------------------------|----------|----------------------------|-------------------------------|
+| LTE Lobaro Platform Host | <a href='#platformhost'>`Host         `</a> | IP / URL | List of various Endpoints  | `coaps://platform.lobaro.com` | 
+| LTE MCC+MNC Code         | <a href='#lteparam'>`Operator     `</a>     | Number   | e.g. `26201` (Dt. Telekom) | `[not set]`                   |
+| LTE Band                 | <a href='#lteparam'>`Band         `</a>     | Number   | `3` or `8,20` or `3,8,20`  | `3,8,20`                      |
+| LTE APN                  | <a href='#lteparam'>`APN          `</a>     | String   | any APN                    | ` * `                         |
+| LTE NB-IoT on/off        | <a href='#ltenet'>`UseNbiot     `</a>       | Bool     | `true` or `false`          | `true`                        |
+| LTE M1 on/off            | <a href='#ltenet'>`UseLtem      `</a>       | Bool     | `true` or `false`          | `true`                        |
+| LTE SIM Pin              | `PIN          `                             | Number   | 4 digits pin, e.g. `1234`  | `[not set]`                   |
+| LTE DNS Servers used     | `DNS          `                             | IP       | List of DNS server IPs     | `9.9.9.9,1.1.1.1  `           |
+| Plain UDP Host           | <a href='#plainUdp'>`UdpHost      `</a>     | IP       | any, e.g `94.130.20.37`    | `[not set]`                   |
+| Plain UDP Port           | <a href='#plainUdp'>`UdpPort      `</a>     | Number   | any, e.g `3333`            | `[not set]`                   |
+
+#### `Host` {#platformhost}
+
+Hostname or IP of the Lobaro Platform instance **CoAP endpoint** to which the gateway communicates using UDP.
+
+* Using DTLS: `coaps://platform.lobaro.com`
+* No DTLS: `coap://platform.lobaro.com`
+* Plain IP:  `94.130.20.37` (platform.lobaro.com)
+
+:::tip[Host with fallback]
+It's also possible to configure a list of URLs to implement a fallback mechanism. This is particulary helpful for
+combining DTLS and non DTLS connection attempts: `coaps://platform.lobaro.com,coap://platform.lobaro.com `
+:::
+
+:::info[Alternative endpoints]
+Other endpoints, e.g. direct **MQTT**, may be available in some products. Refer to the product specific documentation
+and/or contact Lobaro for details.
+:::
+
+---
+
+#### `APN` `Operator` `Band` {#lteparam}
+
+Basic params to configure the NB-IoT or LTE-M connection. These parameters must be set in accordance to the SIM card and
+network provider used. Usually the defaults for these parameters work quite well since they allow the modem to select
+and join the network
+using information on the SIM-card. Nevertheless, if known, the `APN` should be configured.
+
+[Read more](/configuration/lte-network-configuration.md) about LTE network configuration parameters.
+
+---
+
+#### `UseNbiot` `UseLtem` {#ltenet}
+
+The modem supports both NB-IoT and LTE-M technologies. Usually both are enabled and the cellular modem automatically
+decides
+with network type it should use at a specific location in the field. By setting one parameter to `false` you can insist
+on
+using the other technology. At least one parameter must stay enabled, e.g. set to `true`.
+
+:::warning
+On older nRF91 modem firmware (MFW < `1.3.0`) only one of this parameter can be enabled, trying to set both to `true`
+will
+result in selecting just NB-IoT.
+:::
+
+---
+
+#### `UdpHost` `UdpPort` {#plainUdp}
+
+Instead of sending the metering data to the lobaro platform these data can alternatively send to an external UDP socket.
+This is helpful if you don't want your metering data on any external server but want to control your gateways using the
+Lobaro Platform.
+
+* `UdpHost`: Separate IP to upload plain telegrams via UDP
+    * `[not set]` = upload to Lobaro IoT Platform using Host parameter address
+* `UdpPort`: Separate Port to upload plain telegrams via UDP
+    * only used when UdpHost is set
+
+:::info
+Even the metering data is send to an external server the firmware normally still needs a connection a Lobaro Platform
+instance for sending status information or performing remote configuration / firmware updates.
+
+If needed contact Lobaro for possible options to handle all communication without our platform, e.g. using direct MQTT
+to an external broker.
+:::
+
+### LoRaWAN Connection
+
+| Description                    | Key                                          | Type     | Possible Values   | Default |
+|:-------------------------------|:---------------------------------------------|----------|-------------------|---------|
+| LoRaWAN DevEUI                 | `DevEUI       `                              | byte[8]  |                   |         |
+| LoRaWAN AppEUI / JoinEUI (1.1) | `JoinEUI      `                              | byte[8]  |                   |         | 
+| LoRaWAN AppKey                 | `AppKey       `                              | byte[16] |                   |         |
+| LoRaWAN NwkKey (1.1)           | `NwkKey       `                              | byte[16] |                   |         |
+| LoRaWAN Days between Timesync  | `TimeSync     `                              | Number   | any, e.g `5`      |         |
+| LoRaWAN Payload Format         | <a href='#payloadformat'>`PayloadFormat`</a> | Number   | `0`, `1`, `2`     |         |                                
+| LoRaWAN use OTAA               | `OTAA         `                              | Bool     | `true` or `false` |         |
+| LoRaWAN Random TX Delay [s]    | `RndDelay     `                              | Number   | any, e.g. `10`    | 0       |
+
+#### `PayloadFormat` {#payloadformat}
+
+Used encoding of the LoRaWAN uplink payload packets.
+
+* `0` = Encoding in ports
+* `1` = prefix bytes and time
+* `2` = prefix bytes, time, and rssi
+
+### Special
+
+| Description             | Key             | Type   | Possible Values   |   Default   |
+|:------------------------|:----------------|--------|-------------------|:-----------:|
+| Verbose UART Log        | `verbose      ` | Bool   | `true` or `false` |   `false`   |
+| Addon RAM configuration | `extRam       ` | String | Lobaro Internal   | `[not set]` |

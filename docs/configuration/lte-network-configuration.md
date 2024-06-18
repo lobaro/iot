@@ -25,20 +25,24 @@ for few sim cards, like **1NCE** and **Vodafone Easy Connect** SIM cards.
 
 Our cellular IoT (LTE-M or NB-IoT) devices usually allow the configuration of
 
-* `APN`
-    * Should be configured to SIM specific value, e.g. `iot.1nce.net`
-    * Default: `*`
-        * APN Autodetect -> Modem uses internally known APN
-            * Will only work for 1NCE and Vodafone EasyConnect
-        * APN autodetect not possible: Modem falls back to `Not set` (see below)
-    * `Not set` -> Modem uses SIM internal information
+### APN
 
-* `Operator`
-    * Usually **no need** to configure it explicitly to some specific MCC+MNC operator code like `26201`
-    * Default: `Not set` -> Modem performs automatic network selection
-* `Band`
-    * Usually **no need** to configure it explicitly
-    * Default: `Not set` -> Modem will use one of these bands `3,8,20`
+* Should be configured to SIM specific value, e.g. `iot.1nce.net`
+* Default: `*`
+    * APN Autodetect -> Modem uses internally known APN
+        * Will only work for 1NCE and Vodafone EasyConnect
+    * APN autodetect not possible: Modem falls back to `Not set` (see below)
+* `Not set` -> Modem uses SIM internal information
+
+### Operator
+
+* Usually **no need** to configure it explicitly to some specific MCC+MNC operator code like `26201`
+* Default: `Not set` -> Modem performs automatic network selection
+
+### Band
+
+* Usually **no need** to configure it explicitly
+* Default: `Not set` -> Modem will use one of these bands `3,8,20`
 
 :::note
 `Not set` denotes that the configuration parameter field is empty.

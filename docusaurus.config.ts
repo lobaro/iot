@@ -74,7 +74,7 @@ const config: Config = {
       },
     },
     navbar: {
-      hideOnScroll: true,
+      hideOnScroll: false,
       title: 'Docs',
       logo: {
         alt: 'Lobaro GmbH - Logo',
@@ -114,12 +114,17 @@ const config: Config = {
           label: 'Lobaro Cloud',
         },
         {
+          type: 'html',
+          position: 'right',
+          value: '<button onclick="history.back()">Go Back</button>',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',
           position: 'right',
           label: 'Knowledge Base',
         },
-     {
+        {
           type: 'docSidebar',
           sidebarId: 'allDocSidebar',
           position: 'right',
@@ -146,7 +151,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash'], // https://prismjs.com/#supported-languages
+      additionalLanguages: ['bash','json'], // https://prismjs.com/#supported-languages
     },
     imageZoom: {
       // CSS selector to apply the plugin to, defaults to '.markdown img'
