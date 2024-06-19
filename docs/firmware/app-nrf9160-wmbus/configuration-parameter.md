@@ -18,7 +18,8 @@ delivery.
 
 :::info[Product specific parameters possible]
 The described configuration parameters are common for all products running this firmware. Nevertheless some products may
-add additional parameters or alter the here described parameters, e.g. some allow additional values to be set. In any case the documentation of the specific product takes precedence over this general description and should
+add additional parameters or alter the here described parameters, e.g. some allow additional values to be set. In any
+case the documentation of the specific product takes precedence over this general description and should
 also be read with care.
 :::
 
@@ -189,18 +190,18 @@ If needed contact Lobaro for possible options to handle all communication withou
 to an external broker.
 :::
 
-### LoRaWAN Connection
+### LoRaWAN Connection{#lorawanparams}
 
-| Description                    | Key                                          | Type     | Possible Values   | Default |
-|:-------------------------------|:---------------------------------------------|----------|-------------------|---------|
-| LoRaWAN DevEUI                 | `DevEUI       `                              | byte[8]  |                   |         |
-| LoRaWAN AppEUI / JoinEUI (1.1) | `JoinEUI      `                              | byte[8]  |                   |         | 
-| LoRaWAN AppKey                 | `AppKey       `                              | byte[16] |                   |         |
-| LoRaWAN NwkKey (1.1)           | `NwkKey       `                              | byte[16] |                   |         |
-| LoRaWAN Days between Timesync  | `TimeSync     `                              | Number   | any, e.g `5`      |         |
-| LoRaWAN Payload Format         | <a href='#payloadformat'>`PayloadFormat`</a> | Number   | `0`, `1`, `2`     |         |                                
-| LoRaWAN use OTAA               | `OTAA         `                              | Bool     | `true` or `false` |         |
-| LoRaWAN Random TX Delay [s]    | `RndDelay     `                              | Number   | any, e.g. `10`    | 0       |
+| Description                    | Key                                          | Type     | Possible Values   | Default        |
+|:-------------------------------|:---------------------------------------------|----------|-------------------|----------------|
+| LoRaWAN DevEUI                 | `DevEUI       `                              | byte[8]  | any               | `Device EUI64` |
+| LoRaWAN AppEUI / JoinEUI (1.1) | `JoinEUI      `                              | byte[8]  | any               | `random`       | 
+| LoRaWAN AppKey                 | `AppKey       `                              | byte[16] | any               | `random`       |
+| LoRaWAN NwkKey (1.1)           | `NwkKey       `                              | byte[16] | any               | `random`       |
+| LoRaWAN Days between Timesync  | `TimeSync     `                              | Number   | any               | `3`            |
+| LoRaWAN Payload Format         | <a href='#payloadformat'>`PayloadFormat`</a> | Number   | `0`, `1`, `2`     | `0`            |                                
+| LoRaWAN use OTAA               | `OTAA         `                              | Bool     | `true` or `false` | `true`         |
+| LoRaWAN Random TX Delay [s]    | `RndDelay     `                              | Number   | any               | `10`           |
 
 #### `PayloadFormat` {#payloadformat}
 
