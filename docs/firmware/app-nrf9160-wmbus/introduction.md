@@ -99,7 +99,7 @@ telegrams over its 868 MHz wireless interface. The following sequence of operati
     * Collect S1-Mode telegrams (wMBUS) for `smodeDurSec` seconds (if not 0)
     * Collect X-Mode telegrams (Sensus RF) for `xmodeDurSec` seconds (if not 0)
     * Collect U-Mode telegrams (Müller Funk) for `umodeDurSec` seconds (if not 0)
-3. Perform sensor measurement using the optional hardware addon (only if any addon installed)
+3. Optional: Perform sensor measurement using the optional hardware addon (only if any sensor addon installed)
 4. Upload all stored data via NB-IoT / LTE-CatM1 or LoRaWAN (depends on `WAN` configuration)
     * Upload all collected metering telegrams, status and sensor data
     * When the upload fails the upload is retried every 24h after daily status or until the next `listenCron` triggers.

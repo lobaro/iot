@@ -23,7 +23,7 @@ case the documentation of the specific product takes precedence over this genera
 also be read with care.
 :::
 
-### General
+### General{#general}
 
 | Description                                  | Key                      | Type   | Possible Values    | Default |
 |:---------------------------------------------|:-------------------------|--------|--------------------|:-------:|
@@ -106,7 +106,7 @@ Set hard limit on how many telegrams will be collected and uploaded. The firmwar
 has been collected, regardless of the passed time. Can be used save battery / data volume, should the device be in an
 area with a large number of meters.
 
-### LTE Connection
+### LTE Connection{#lteconnection}
 
 | Description              | Key                                         | Type     | Possible Values            | Default                       |  
 |:-------------------------|:--------------------------------------------|----------|----------------------------|-------------------------------|
@@ -135,8 +135,9 @@ combining DTLS and non DTLS connection attempts: `coaps://platform.lobaro.com,co
 :::
 
 :::info[Alternative endpoints]
-Other endpoints, e.g. direct **MQTT**, may be available in some products. Refer to the product specific documentation
-and/or contact Lobaro for details.
+For this firmware the Lobaro IoT platform is mandatory. Other products may have options for additional endpoints, e.g.
+direct **MQTT** communication.
+Please refer to the product specific documentation and/or contact Lobaro for details on this topic.
 :::
 
 ---
