@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+Deployed at: [lobaro.github.io/iot/](https://lobaro.github.io/iot/)
+
 `npm start`
 Starts the development server.
 
