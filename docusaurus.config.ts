@@ -31,6 +31,7 @@ const config: Config = {
   },
 
   plugins: [
+    'docusaurus-plugin-image-zoom',
     [
       '@docusaurus/plugin-ideal-image',
       {
@@ -49,7 +50,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-         routeBasePath: '/',
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -130,13 +131,13 @@ const config: Config = {
           position: 'right',
           label: 'All Docs',
         },
-      /*  {to: '/blog', label: 'Blog', position: 'left'},*/
-       /* {
-          href: 'https://github.com/lobaro/iot',
-          label: 'GitHub',
-          position: 'right',
-        },
-          */
+        /*  {to: '/blog', label: 'Blog', position: 'left'},*/
+        /* {
+           href: 'https://github.com/lobaro/iot',
+           label: 'GitHub',
+           position: 'right',
+         },
+           */
         {
           href: 'https://www.lobaro.de',
           label: 'Lobaro Homepage',
@@ -151,21 +152,18 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash','json'], // https://prismjs.com/#supported-languages
+      additionalLanguages: ['bash', 'json'], // https://prismjs.com/#supported-languages
     },
-    imageZoom: {
-      // CSS selector to apply the plugin to, defaults to '.markdown img'
+    zoom: {
       selector: '.markdown img',
-      // Optional medium-zoom options
-      // see: https://www.npmjs.com/package/medium-zoom#options
-      options: {
-        margin: 24,
-        background: '#BADA55',
-        scrollOffset: 0,
-        container: '#zoom-container',
-        template: '#zoom-template',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
       },
-    },
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      }
+    }
   } satisfies Preset.ThemeConfig,
 };
 
