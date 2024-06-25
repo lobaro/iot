@@ -37,8 +37,8 @@ const config: Config = {
       {
         name: 'assets/images/ideal-img/[name].[hash:hex:7].[width].[ext]',
         quality: 85,
-        max: 1200, // max resized image's size.
-        min: 300, // min resized image's size. if original is lower, use that size.
+        max: 4096, // max resized image's size.
+        min: 1600, // min resized image's size. if original is lower, use that size.
         steps: 4, // the max number of images generated between min and max (inclusive)
         disableInDev: false,
       },
