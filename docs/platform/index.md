@@ -9,8 +9,8 @@ title: Overview
 The Lobaro IoT Platform operates as a **Head End System for IoT Devices**. The Platform is optimized for but not limited
 to handle Lobaro devices.
 
-- Public Lobaro instance: platform.lobaro.com
-- For On-Premise hosting check out Hosting & Licensing
+- Public Lobaro instance: [platform.lobaro.com](https://platform.lobaro.com/)
+- For On-Premise hosting check out [Hosting & Licensing](./license)
 
 The documentation will always reference the Public Lobaro instance.
 
@@ -51,7 +51,7 @@ next to it.
 
 * **Devices:** Manage all devices of your organisation.
 * **Data:** See incoming data of all your devices.
-* **Integrations:** Manage data connections to and from other applications. (See: [Integrations](platform/integrations/index.md)).
+* **Integrations:** Manage data connections to and from other applications. (See: [Integrations](integrations/index.md)).
 * **Organisation:** Manage all organisation related data.
 * **Configuration:** Platform administration of global entities independent of the Organisation (Admins only).
 * **Tools:** wMbus Parser and Hardware Activation.

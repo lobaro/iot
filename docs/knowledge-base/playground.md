@@ -13,6 +13,8 @@ Location to showcase features and examples for writing content in this doc with 
 This page is marked as draft and **will not** be included in builds.
 :::
 
+## Images
+
 <Image alt='docusaurus'
 img={require('@site/static/img/docusaurus.png')}
 style={{width:'10%',paddingTop:'10px',paddingBottom:'10px'}} />
@@ -22,8 +24,6 @@ style={{width:'10%',paddingTop:'10px',paddingBottom:'10px'}} />
        img={require('@site/static/img/docusaurus.png')}
        style={{width: '10%', paddingTop: '10px', paddingBottom: '10px'}}/>
 ```
-
-## Images
 
 ### Center Align
 
@@ -94,6 +94,8 @@ The make a line break these options exit:
 ````
 
 ## Admonitions
+
+See also: https://docusaurus.io/docs/markdown-features/admonitions
 
 :::note[Your Title **with** some _Markdown_ `syntax`!]
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).

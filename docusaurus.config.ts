@@ -112,7 +112,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'cloudSidebar',
           position: 'left',
-          label: 'Lobaro Cloud',
+          label: 'Lobaro IoT Platform',
         },
         {
           type: 'html',

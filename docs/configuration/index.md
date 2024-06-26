@@ -35,7 +35,7 @@ first be configured correctly locally before the device can get online for the f
 
 ### Remotely
 
-Once the device has connectivity the configuration can be changed remotely over the air using various methods, e.g. the Lobaro Cloud, MQTT or any LoRaWAN network server
+Once the device has connectivity the configuration can be changed remotely over the air using various methods, e.g. the Lobaro IoT Platform, MQTT or any LoRaWAN network server
 using initiated special downlink communication:
 
 <Image alt='Lobaro Platform Configuration Tab'
