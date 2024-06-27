@@ -152,7 +152,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash', 'json'], // https://prismjs.com/#supported-languages
+      additionalLanguages: ['bash', 'json', 'toml'], // https://prismjs.com/#supported-languages
     },
     zoom: {
       selector: '.markdown img',
