@@ -57,10 +57,10 @@ style={{width:'40%',paddingTop:'5px',paddingBottom:'5px'}} />
 | Description                     | Key                                        | Type   | Possible Values                                                        | Default<div style={{width:'120px'}}/> |  
 |:--------------------------------|:-------------------------------------------|--------|------------------------------------------------------------------------|---------------------------------------|
 | WMBUS Listen Cron [UTC+0]       | <a href='#listencron'>`listenCron   `</a>  | String | Any [CRON](configuration/cron-configuration.md) String                 | `0 0 12 * * *`                        |
-| WMBUS C1/T1 Listen Duration [s] | <a href='#durations'>`cmodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect C1/T1<br/>Max Value=`36000`  | `300`                                 |
-| WMBUS S1 Listen Duration [s]    | <a href='#durations'>`smodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect S1<br/>Max Value=`36000`     | `0`                                   |
-| Sensus RF Listen Duration [s]   | <a href='#durations'>`xmodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect X-Mode<br/>Max Value=`36000` | `0`                                   |
-| Müller-Funk Listen Duration [s] | <a href='#durations'>`umodeDurSec  `</a>   | Number | Any second value<br/>`0` = Do not collect U-Mode<br/>Max Value=`36000` | `0`                                   |
+| WMBUS C1/T1 Listen Duration [s] | <a href='#durations'>`cmodeDurSec  `</a>   | Number | Number of seconds<br/>`0` = Do not collect C1/T1<br/>Max Value=`36000`  | `300`                                 |
+| WMBUS S1 Listen Duration [s]    | <a href='#durations'>`smodeDurSec  `</a>   | Number | Number of seconds<br/>`0` = Do not collect S1<br/>Max Value=`36000`     | `0`                                   |
+| Sensus RF Listen Duration [s]   | <a href='#durations'>`xmodeDurSec  `</a>   | Number | Number of seconds<br/>`0` = Do not collect X-Mode<br/>Max Value=`36000` | `0`                                   |
+| Müller-Funk Listen Duration [s] | <a href='#durations'>`umodeDurSec  `</a>   | Number | Number of seconds<br/>`0` = Do not collect U-Mode<br/>Max Value=`36000` | `0`                                   |
 | WMBUS ID Filter List            | <a href='#filter'>`devFilter`</a>          | String | List, e.g.<br/>`88009035,13456035`                                     | `[not set]`                           |
 | WMBUS Type Filter List          | <a href='#filter'>`typFilter    `</a>      | String | List, e.g.<br/>`08,07`                                                 | `[not set]`                           |
 | WMBUS M-Field Filter List       | <a href='#filter'>`mFilter      `</a>      | String | List, e.g.<br/> `DME,ITW,SEN,QDS`                                      | `[not set]`                           |
