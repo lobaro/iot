@@ -1,10 +1,10 @@
 ---
 sidebar_position: 0
-displayed_sidebar: firmwareSidebar
+displayed_sidebar: componentsSidebar
 title: Overview
 ---
 
-# Firmware Overview
+# Components Overview
 
 This section describes the different available firmware implementation. In different products the same firmware is
 shared. This is the reason why we decided to describe the firmware functionality in a general documentation and only

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-displayed_sidebar: firmwareSidebar
+displayed_sidebar: componentsSidebar
 title: LoRaWAN Communication
 ---
 

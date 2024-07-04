@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-displayed_sidebar: firmwareSidebar
+displayed_sidebar: componentsSidebar
 title: Cellular IoT Communication
 ---
 

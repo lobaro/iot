@@ -76,12 +76,12 @@ const config: Config = {
     },
     navbar: {
       hideOnScroll: false,
-      title: 'Docs',
+      title: 'docs',
       logo: {
         alt: 'Lobaro GmbH - Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logoDark.svg',
-        width: '120px'
+        width: '115px'
       },
       items: [
         {
@@ -90,24 +90,21 @@ const config: Config = {
           position: 'left',
           label: 'Products',
         },
+
         {
           type: 'docSidebar',
-          sidebarId: 'firmwareSidebar',
+          sidebarId: 'componentsSidebar',
           position: 'left',
-          label: 'Firmware',
+          label: 'Components',
         },
+
         {
           type: 'docSidebar',
           sidebarId: 'configurationSidebar',
           position: 'left',
           label: 'Configuration',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'hardwareSidebar',
-          position: 'left',
-          label: 'Hardware',
-        },
+
         {
           type: 'docSidebar',
           sidebarId: 'cloudSidebar',
@@ -120,17 +117,24 @@ const config: Config = {
           value: '<button onclick="history.back()">Go Back</button>',
         },
         {
+          type: 'html',
+          position: 'right',
+          value: '<button onclick="history.forward()">Go Forward</button>',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'knowledgeBaseSidebar',
           position: 'right',
           label: 'Knowledge Base',
         },
+
+         /*
         {
           type: 'docSidebar',
           sidebarId: 'allDocSidebar',
           position: 'right',
           label: 'All Docs',
-        },
+        },*/
         /*  {to: '/blog', label: 'Blog', position: 'left'},*/
         /* {
            href: 'https://github.com/lobaro/iot',

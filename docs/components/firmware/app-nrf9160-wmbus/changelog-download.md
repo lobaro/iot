@@ -1,6 +1,6 @@
 ---
 sidebar_position: 100
-displayed_sidebar: firmwareSidebar
+displayed_sidebar: componentsSidebar
 title: Changelog & Updates
 ---
 ## Firmware Updates

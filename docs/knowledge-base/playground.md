@@ -13,6 +13,18 @@ Location to showcase features and examples for writing content in this doc with 
 This page is marked as draft and **will not** be included in builds.
 :::
 
+## Icons
+
+From https://docusaurus.community/
+
+<IIcon icon="charm:github" height="48" /> This is a GitHub icon.
+
+```jsx title="Include Icons"
+<IIcon icon="mdi:github" height="48" /> This is a GitHub icon.
+```
+
+Iconify have a superb [Icon Explorer](https://icon-sets.iconify.design/) where you can search for icons and copy the code to use in your documentation.
+
 ## Images
 
 <Image alt='docusaurus'

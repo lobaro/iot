@@ -4,6 +4,7 @@ import Code from '@theme/MDXComponents/Code';
 import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { Icon } from '@iconify/react'; // Import the entire Iconify library.
 
 
 export default {
@@ -11,5 +12,6 @@ export default {
     Code,
     Image,
     Tabs,
-    TabItem
+    TabItem,
+    IIcon: Icon, // Make the iconify Icon component available in MDX as <icon />.
 };

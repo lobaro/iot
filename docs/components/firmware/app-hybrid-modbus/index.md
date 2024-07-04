@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-displayed_sidebar: firmwareSidebar
+displayed_sidebar: componentsSidebar
 title: app-hybrid-modbus
 ---
 # app-hybrid-modbus
