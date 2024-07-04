@@ -20,7 +20,8 @@ Third party systems can be connected
 to retrieve any wireless M-BUS data and status information using the different available platform integrations. This
 makes an easy data forwarding
 e.g. using MQTT, HTTP-Push or the REST interfaces possible without in-depth knowledge of the underlying actual
-communication of the platform with this firmware. Lobaro uses an optimized low power protocol for communication between
+communication of the platform with this firmware. Lobaro uses an optimized low power protocol secured by TLS for
+communication between
 this firmware based products and our platform.
 
 :::tip[SaaS instance Lobaro Platform]
