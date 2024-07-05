@@ -114,12 +114,12 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<button onclick="history.back()">Go Back</button>',
+          value: '<button onclick="history.back()">Navigate ⬅️</button>',
         },
         {
           type: 'html',
           position: 'right',
-          value: '<button onclick="history.forward()">Go Forward</button>',
+          value: '<button onclick="history.forward()">Navigate ▶️</button>',
         },
         {
           type: 'docSidebar',
