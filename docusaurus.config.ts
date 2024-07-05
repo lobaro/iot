@@ -114,7 +114,7 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<button onclick="history.back()">Navigate ⬅️</button>',
+          value: '<button onclick="history.back()">⬅️ Navigate</button>',
         },
         {
           type: 'html',
