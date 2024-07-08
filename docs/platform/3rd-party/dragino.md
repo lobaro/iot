@@ -18,10 +18,10 @@ For further details please consult the manufacturers documentation.
 1. Insert your SIM Card
 2. Connect a configuration cable to issue the commands below
     * Baud: 9600
-    * Data bits: 8
-    * Stop bits: 1
+    * Data bits: 8
+    * Stop bits: 1
     * Parity: None
-    * Flow Control: None
+    * Flow Control: None
 
 
 Enter the following password to access the device
