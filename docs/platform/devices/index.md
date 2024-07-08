@@ -11,15 +11,15 @@ Each device has a Device Type that defines the type of the device, e.g. how data
 
 When opening the device page there are multiple sub pages:
 
-* Overview
-* Device Data
-* Uplinks
-* Downlinks
-* Config
-* Settings
-* Security
+* [Overview](#overview)
+* [Device Data](#device-data)
+* [Uplinks](#uplinks)
+* [Downlinks](#downlinks)
+* [Config](#config)
+* [Settings](#settings)
+* [Security](#security)
 
-## Overview
+## Overview{#overview}
 
 ### Device Properties
 
@@ -39,15 +39,22 @@ The feature is currently not supported.
 
 The device can have a physical location. The location can be set via the Web UI, APIs and by the parser.
 
-## Device Data
+## Device Data{#device-data}
 
 Device data lists all data records returned from the Parser.
 
 The table is configured via the "Data Table Config" in the "Device Type".
 
-## Uplinks & "Parser returned nil"
+## Uplinks{#uplinks}
 
-Uplinks are raw sent messages from a device that were received and tried to be processed by the parser to create parsed records ("Device Data"). Not all uplinks return a good data result, then the parser result is "Parser returned nil". This is **not** a general error, but a hint that no device data could be extracted from the uplink. Often this happens with status uplinks that do not contain user data but can be processed by the parser for meta information, e.g. battery voltage, that are shown under "Device Properties".
+Uplinks are raw sent messages from a device that were received and tried to be processed by the parser to create parsed records ("Device Data"). 
+
+:::note[Parser returned nil]
+Not all uplinks return a good data result, then the parser result is "Parser returned nil". 
+This is **not** a general error, but a hint that no device data could be extracted from the uplink. 
+Often this happens with status uplinks that do not contain user data but can be processed by the parser for meta information, 
+e.g. battery voltage, that are shown under "Device Properties".
+:::
 
 ### Simulate Uplinks
 
@@ -59,11 +66,11 @@ The copied data can then be pasted in under the "Settings" Tab and send to the p
 
 ![Simulate Uplink](simulate-uplink/img.png)
 
-## Downlinks
+## Downlinks{#downlinks}
 
 A list of queued and sent downlinks.
 
-## Config (optional)
+## Config{#config}
 
 Requires Trait:
 
@@ -77,7 +84,7 @@ Config properties must be updated by the parser, else the page is empty.
 
 Updating configuration only works for NB-IoT devices yet (10/2022).
 
-## Settings
+## Settings{#settings}
 
 Edit devices Settings:
 
@@ -134,3 +141,12 @@ Some future plans are to filter by tag in integrations, display tags in the devi
 
 Currently the most important difference to device properties (where you can also story lists) is, that the parser has no write access to tags.  
 Also a device with too many tags might get less handy, where device properties can be added as needed.
+
+
+## Security{#security}
+
+On the Security tab, all security related information about the device and it's connection can be found.
+
+You can find information like:
+* If DTLS is enabled for the device
+* Certificate fingerprint of the device
