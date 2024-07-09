@@ -1,5 +1,10 @@
 # Devices
 
+:::info[Required roles]
+* **Everybody** read access
+* **device-admin** write access
+:::
+
 A device represents a single physical IoT device that might consist of multiple Sensors and Actors.
 
 Each device has a Device Type that defines the type of the device, e.g. how data is parsed, displayed and forwarded via integrations.
@@ -64,7 +69,7 @@ For test purposes, it may be useful to simulate uplinks through the platform and
 
 The copied data can then be pasted in under the "Settings" Tab and send to the platform again for processing with a click on "Send Data". This data then appears again under "Uplinks" with "http" as datasource. Downstream processing, including any integrations, is then just as if the data had been sent from a physical device.
 
-![Simulate Uplink](simulate-uplink/img.png)
+![Simulate Uplink](img/simulate-uplink.png)
 
 ## Downlinks{#downlinks}
 
