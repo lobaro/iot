@@ -6,6 +6,10 @@ title: Overview
 
 # Components Overview
 
+<IIcon icon="fluent-mdl2:web-components" height="64" /> 
+
+Lobaro Products are made from components.
+
 This section describes the different available firmware implementation. In different products the same firmware is
 shared. This is the reason why we decided to describe the firmware functionality in a general documentation and only
 point out product specific details in the actual product description.
