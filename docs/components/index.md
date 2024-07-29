@@ -4,10 +4,8 @@ displayed_sidebar: componentsSidebar
 title: Overview
 ---
 
-# Components Overview
-
-<IIcon icon="fluent-mdl2:web-components" height="64" /> 
-
+# Product Components
+---
 Lobaro Products are made from components.
 
 This section describes the different available firmware implementation. In different products the same firmware is

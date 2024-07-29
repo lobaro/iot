@@ -171,7 +171,7 @@ If you need to parse the log messages of one of our Devices with your own tools,
 Maintenance Tool by using any serial UART reader. You can find the UART parameters above. Take care on the additional
 control lines (DTR, RTS) to have the right state to keep the device run the firmware.
 
-## Device Firmwareupdate
+## Device Firmwareupdate{#fwupdate}
 
 Our devices are shipped ready to use with firmware installed on them, so normally you do not need to install firmware
 yourself. However, over time we sometimes add new features to our devices or fix bugs that come up over time. If you

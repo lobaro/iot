@@ -5,9 +5,7 @@ title: Overview
 ---
 
 # Lobaro IoT Platform
-
-<IIcon icon="oui:app-graph" height="64" /> 
-
+---
 
 The Lobaro IoT Platform operates as a **Head End System for IoT Devices**. The Platform is optimized for but not limited
 to handle Lobaro devices.

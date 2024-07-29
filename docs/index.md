@@ -1,35 +1,12 @@
 ---
 sidebar_position: 0
+title: Overview
+---
+# Lobaro Documentation Center
 ---
 
-# Lobaro Documentation
-
-<Image img={require('./img/lobaro-logo.png')} style={{width:'30%',margin:'0 0 20px 0',alt:'Lobaro Logo'}}/>
+<Image img={require('./img/lobaro-logo.png')} style={{width:'20%',margin:'0 0 20px 0',alt:'Lobaro Logo'}}/>
 
 :::info
 This new documentation center is currently work in progress
 :::
-
-
-
-<Image img={require('./img/lobaro-office.png')} style={{width:'80%',alt:'Lobaro Office'}}/>
-
-* [ ] ddd
-* [x] d
-* [ ] d
-* [ ] d
-* [ ] d
-  
-<Tabs>
-  <TabItem value="apple" label="Apple" default>
-    This is an apple 🍎
-  </TabItem>
-  <TabItem value="orange" label="Orange">
-    This is an orange 🍊
-  </TabItem>
-  <TabItem value="banana" label="Banana">
-    This is a banana 🍌
-  </TabItem>
-</Tabs>
-
-

@@ -4,11 +4,8 @@ displayed_sidebar: configurationSidebar
 title: Overview
 ---
 
-# Configuration Overview
-
-<IIcon icon="hugeicons:configuration-02" height="80" /> 
-
-
+# Device Configuration 
+---
 The device configuration allows a wide range and flexible way of internal settings adjustments for Lobaro hardware.
 This chapter generally describes our tools, common configuration parameters and workflows that are used in the same way
 for many

@@ -32,7 +32,7 @@ The key must be created at the Platform server and should never leave the system
 
     openssl ecparam -name prime256v1 -genkey -noout -out platform.key
 
-:::error
+:::danger
 Do not send the resulting private key file `platform.key` to anyone.
 :::
 

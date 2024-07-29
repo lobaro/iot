@@ -20,10 +20,16 @@ From https://docusaurus.community/
 <IIcon icon="charm:github" height="48" /> This is a GitHub icon.
 
 ```jsx title="Include Icons"
-<IIcon icon="mdi:github" height="48" /> This is a GitHub icon.
+<IIcon icon="mdi:github" height="48"/>
+This
+is
+a
+GitHub
+icon.
 ```
 
-Iconify have a superb [Icon Explorer](https://icon-sets.iconify.design/) where you can search for icons and copy the code to use in your documentation.
+Iconify have a superb [Icon Explorer](https://icon-sets.iconify.design/) where you can search for icons and copy the
+code to use in your documentation.
 
 ## Images
 
@@ -232,10 +238,12 @@ Files should be placed nearby the doc source files in a `./files` directory.
 </tr></table>
 
 ```jsx title="Download"
-<table><tr>
-    <td><Image alt='PDF Download' img={require('@site/static/img/pdf.png')} style={{width: '32px'}}/></td>
-    <td><a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}>Download this PDF </a></td>
-</tr></table>
+<table>
+    <tr>
+        <td><Image alt='PDF Download' img={require('@site/static/img/pdf.png')} style={{width: '32px'}}/></td>
+        <td><a target="\_blank" href={require('./files/en---sensusrf-brochure.pdf').default}>Download this PDF </a></td>
+    </tr>
+</table>
 ```
 
 ## Horizontal Rule
@@ -245,3 +253,30 @@ Files should be placed nearby the doc source files in a `./files` directory.
 ```markdown title="Three dashes form a horizontal rule in md"
 ---
 ```
+
+## Checkboxes
+
+* [ ] ddd
+* [x] d
+* [ ] d
+* [ ] d
+* [ ] d
+*
+
+## Links
+
+```markdown title="File Links"
+[file path to another document](./installation.mdx)
+
+You can write [links](/otherFolder/doc4.mdx) relative to the content root (`/docs/`).
+
+You can also write [links](/docs/otherFolder/doc4.mdx) relative to the site directory, but it's not recommended.
+```
+
+Relative file paths are resolved against the current file's directory. Absolute file paths, on the other hand, are
+resolved relative to the content root, usually docs/, blog/, or localized ones like
+i18n/zh-Hans/plugin-content-docs/current.
+
+Absolute file paths can also be relative to the site directory. However, beware that links that begin with /docs/ or
+/blog/ are not portable as you would need to manually update them if you create new doc versions or localize them.
+
