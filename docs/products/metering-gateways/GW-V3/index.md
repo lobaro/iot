@@ -7,13 +7,13 @@ title: wM-Bus GW V3 (Battery)
 # Wireless M-BUS Gateway V3 (Battery)
 
 <Image alt='Wireless M-BUS Gateway V3 (Battery)'
-img={require('./img/LOB-GW-HYB-WMBUS_wmbus-gateway-v3_Lorawan_NB-IoT_noBorder.jpg')}
+img={require('../img/LOB-GW-HYB-WMBUS_wmbus-gateway-v3_Lorawan_NB-IoT_noBorder.jpg')}
 style={{width: '40%', paddingTop: '10px', paddingBottom: '10px'}}/>
 
 ## Product Identification
 
 <Image alt='Label Wireless M-BUS Gateway V3 (Battery)'
-img={require('./img/labelv3.png')}
+img={require('../img/labelv3.png')}
 style={{width: '25%', paddingTop: '10px', paddingBottom: '10px'}}/>
 
 * Product Name: **Wireless M-Bus Gateway V3 (Battery)**
@@ -59,7 +59,7 @@ the information in this section takes precedence over the general [description o
 
 ### Internal view{#insideview}
 <Image alt='Gateway V3 Internal Components'
-img={require('./img/GW_V3_Internal_Components.png')}
+img={require('../img/GW_V3_Internal_Components.png')}
 style={{width: '40%', paddingTop: '10px', paddingBottom: '10px'}}/>
 
 1. Battery connector (XH)

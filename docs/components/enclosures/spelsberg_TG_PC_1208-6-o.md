@@ -8,7 +8,7 @@ title: Spelsberg TG PC 1208-6-o
 
 <Image alt='Spelsberg TG PC 1208-6-o Housing'
 img={require('./img/housing-spelsberg-closed.jpg')}
-style={{width: '50%', paddingTop: '10px', paddingBottom: '10px'}}/>
+style={{width: '35%', paddingTop: '10px', paddingBottom: '10px'}}/>
 
 * [Product Specifications (external Link)](https://www.spelsberg.com/industrial-housing/plain-with-mounting-cams/20040401/)
 * Size: 122mm (w) x 82mm (l) x 55mm (h)

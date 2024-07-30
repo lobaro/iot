@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
 # displayed_sidebar: productsSidebar
-title: Overview
+title: Product Overview
 ---
 
 # Lobaro IoT Products

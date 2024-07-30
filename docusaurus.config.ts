@@ -85,10 +85,22 @@ const config: Config = {
       },
       items: [
         {
+          type: 'html',
+          position: 'left',
+          value: '<button onclick="history.back()">⬅️</button>',
+        },
+
+        {
+          type: 'html',
+          position: 'left',
+          value: '<button onclick="history.forward()">➡️</button>',
+        },
+        {
           to: 'products/',
           position: 'left',
           label: 'Products',
         },
+
 
 
         {
@@ -110,16 +122,8 @@ const config: Config = {
           label: 'IoT Platform',
         },
 
-        {
-          type: 'html',
-          position: 'right',
-          value: '<button onclick="history.back()">⬅️</button>',
-        },
-        {
-          type: 'html',
-          position: 'right',
-          value: '<button onclick="history.forward()">➡️</button>',
-        },
+
+
         {
           to: 'knowledge-base/',
           position: 'right',
@@ -134,15 +138,14 @@ const config: Config = {
           label: 'All Docs',
         },*/
         /*  {to: '/blog', label: 'Blog', position: 'left'},*/
-        /* {
+    /*  {
            href: 'https://github.com/lobaro/iot',
            label: 'GitHub',
            position: 'right',
-         },
-           */
+         },*/
         {
           href: 'https://www.lobaro.de',
-          label: 'Lobaro Homepage',
+          label: 'Homepage',
           position: 'right',
         },
       ],

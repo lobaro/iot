@@ -70,7 +70,7 @@ chmod +x lobaro-tool
 ./lobaro-tool
 ```
 
-## Connection Setup
+## Connection setup
 
 Connect your Lobaro Device using the [Lobaro Config Adapter](./usb-config-adapter.md) to the USB-port of your computer.
 
@@ -85,7 +85,7 @@ the
 device is connected to your computer (either COM or ttyUSB), you can alternatively select it explicitly instead of using
 auto.
 
-## Device Configuration
+## Device configuration
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
 img={require('./img/lobaro-tool/tool-config-loaded.png')}
@@ -121,7 +121,7 @@ the DevEUI from one device to the other! This can be reverted by using the _Rest
 
 You can watch the rebooting of the Device and check the altered configuration parameters by locking in the **LOGS** Tab.
 
-## Device Uart Logging
+## Device uart logging
 
 <Image alt='Lobaro Configuration Tool - Automatic Connection'
 img={require('./img/lobaro-tool/tool-config-logs.png')}
@@ -171,7 +171,7 @@ If you need to parse the log messages of one of our Devices with your own tools,
 Maintenance Tool by using any serial UART reader. You can find the UART parameters above. Take care on the additional
 control lines (DTR, RTS) to have the right state to keep the device run the firmware.
 
-## Device Firmwareupdate{#fwupdate}
+## Device firmware update{#fwupdate}
 
 Our devices are shipped ready to use with firmware installed on them, so normally you do not need to install firmware
 yourself. However, over time we sometimes add new features to our devices or fix bugs that come up over time. If you
@@ -181,18 +181,35 @@ This page describes how you install firmware on devices that you have physical a
 our devices, those using LoRaWAN and those using NB-IoT/LTE-M.
 
 Our NB-IoT/LTE-M devices also support installing firmware over the air, without physical access. Check the [platform
-documentation](/cloud) for details.
+documentation](/platform) for details.
 
-### Getting the firmware
+### Current firmware identification
 
-You will need the Firmware you want to install to your device as a file on your computer.
+The currently installed firmware can be identified in the device log using the lobaro tool:
+
+<Image alt='Lobaro Configuration Tool - Automatic Connection'
+img={require('./img/lobaro-tool/Version-Identify.png')}
+style={{width:'50%',paddingTop:'10px',paddingBottom:'10px'}} />
+
+Alternatively in the Lobaro IoT Platform:
+
+<Image alt='Lobaro Configuration Tool - Automatic Connection'
+img={require('./img/lobaro-tool/Version-Identify-platform.png')}
+style={{width:'50%',paddingTop:'10px',paddingBottom:'10px'}} />
+
+
+### Getting the firmware update
+
+You will need the new firmware you want to install to your device as a file on your computer.
 
 You can get the latest firmware files from this documentation on the firmware subpage for your specific Lobaro product.
 The files are
 in a format called Hex and are therefore also called Hex-File. The filename always starts with app- and contains the
 version number as well as a short description of its function and the hardware it is used for. So, for example,
-`app-nrf9160-wmbus-TZ2-0.3.1-mcuboot-slot0.hex` contains firmware for our wMBus-Gateway on NB-IoT-Hardware (nrf9160) in
+`app-nrf9160-wmbus-TZ2-0.3.1-mcuboot-slot0.hex` contains the [app-nrf9160-wmbus](components/firmware/app-nrf9160-wmbus/introduction.md) firmware in
 version 0.3.1.
+
+Usually you should only install updates of the same firmware that is currently installed on your Lobaro device.
 
 ### Installing new firmware
 
