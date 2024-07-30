@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-displayed_sidebar: configurationSidebar
+#displayed_sidebar: configurationSidebar
 title: MBUS Reception Filtering
 ---
 

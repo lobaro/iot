@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-displayed_sidebar: configurationSidebar
+#displayed_sidebar: configurationSidebar
 title: Lobaro USB Config Adapter
 ---
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
-displayed_sidebar: componentsSidebar
-title: Overview
+# displayed_sidebar: allDocSidebar
+#title: Overview
 ---
 
 # Product Components

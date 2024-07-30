@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-displayed_sidebar: componentsSidebar
+#displayed_sidebar: componentsSidebar
 title: app-nrf91-origin
 draft: true
 ---

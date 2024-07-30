@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-displayed_sidebar: componentsSidebar
+#displayed_sidebar: componentsSidebar
 title: Introduction
 ---
 

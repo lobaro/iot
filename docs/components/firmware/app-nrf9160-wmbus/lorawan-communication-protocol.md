@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-displayed_sidebar: componentsSidebar
+#displayed_sidebar: componentsSidebar
 title: LoRaWAN Communication
 ---
 

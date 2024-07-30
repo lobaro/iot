@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-displayed_sidebar: configurationSidebar
+#displayed_sidebar: configurationSidebar
 title: CRON Configuration
 ---
 

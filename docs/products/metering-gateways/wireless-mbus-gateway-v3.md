@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-displayed_sidebar: productsSidebar
+#displayed_sidebar: productsSidebar
 title: wM-Bus GW V3 (Battery)
 ---
 

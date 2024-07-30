@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-displayed_sidebar: productsSidebar
+#displayed_sidebar: productsSidebar
 title: wM-Bus GW (12V - 24V)
 ---
 

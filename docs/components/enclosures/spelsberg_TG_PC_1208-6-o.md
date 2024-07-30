@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-displayed_sidebar: componentsSidebar
+#displayed_sidebar: componentsSidebar
 title: Spelsberg TG PC 1208-6-o
 ---
 

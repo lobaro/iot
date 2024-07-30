@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-displayed_sidebar: configurationSidebar
+#displayed_sidebar: configurationSidebar
 title: LoRaWAN Downlink Config
 ---
 

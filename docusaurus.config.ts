@@ -85,32 +85,31 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'productsSidebar',
+          to: 'products/',
           position: 'left',
           label: 'Products',
         },
 
+
         {
-          type: 'docSidebar',
-          sidebarId: 'componentsSidebar',
+          to: 'components/',
           position: 'left',
           label: 'Components',
         },
 
         {
-          type: 'docSidebar',
-          sidebarId: 'configurationSidebar',
+          to: 'configuration/',
           position: 'left',
           label: 'Configuration',
         },
 
+
         {
-          type: 'docSidebar',
-          sidebarId: 'cloudSidebar',
+          to: 'platform',
           position: 'left',
           label: 'Lobaro IoT Platform',
         },
+
         {
           type: 'html',
           position: 'right',
@@ -122,8 +121,7 @@ const config: Config = {
           value: '<button onclick="history.forward()">Navigate ▶️</button>',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'knowledgeBaseSidebar',
+          to: 'knowledge-base/',
           position: 'right',
           label: 'Knowledge Base',
         },

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-displayed_sidebar: productsSidebar
+#displayed_sidebar: productsSidebar
 title: wM-Bus GW (230V)
 ---
 
