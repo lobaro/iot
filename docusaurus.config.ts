@@ -109,17 +109,17 @@ const config: Config = {
           position: 'left',
           label: 'IoT Platform',
         },
-/*
+
         {
           type: 'html',
           position: 'right',
-          value: '<button onclick="history.back()">⬅️ Navigate</button>',
+          value: '<button onclick="history.back()">⬅️</button>',
         },
         {
           type: 'html',
           position: 'right',
-          value: '<button onclick="history.forward()">Navigate ▶️</button>',
-        },*/
+          value: '<button onclick="history.forward()">➡️</button>',
+        },
         {
           to: 'knowledge-base/',
           position: 'right',
