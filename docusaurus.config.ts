@@ -107,9 +107,9 @@ const config: Config = {
         {
           to: 'platform',
           position: 'left',
-          label: 'Lobaro IoT Platform',
+          label: 'IoT Platform',
         },
-
+/*
         {
           type: 'html',
           position: 'right',
@@ -119,7 +119,7 @@ const config: Config = {
           type: 'html',
           position: 'right',
           value: '<button onclick="history.forward()">Navigate ▶️</button>',
-        },
+        },*/
         {
           to: 'knowledge-base/',
           position: 'right',

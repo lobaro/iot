@@ -27,23 +27,18 @@ meters (e.g. water meters, heat cost allocators) via NB-IoT, LTE-M mobile radio 
 indoor and weather-protected outdoor installation. Ideal for intra-year consumption information (uVI) and billing in the
 housing industry.
 
-### Used Components{#components}
-
-:::info
+### Product Components{#components}
 This product is made from the following components, please see the individual common descriptions for
 further details!
-:::
 
-* Firmware:
-    * Manual: [app-nrf9160-wmbus](/components/firmware/app-nrf9160-wmbus/introduction.md)
-    * Latest Firmware Update: [Download](https://files.lobaro.com/s/9Zo3KQnXJDHNMgE) †
-* Housing:
-    * Type: [TG PC 1208-6-o](/components/enclosures/spelsberg_TG_PC_1208-6-o.md)
-
-:::tip[How to update the firmware]
-† Please see [Lobaro Tool description](/configuration/lobaro-config-tool#fwupdate) for information on how to update the
-firmware.
+:::info[Component Info]
+* **Firmware**:
+  * Manual: [app-nrf9160-wmbus](/components/firmware/app-nrf9160-wmbus/introduction.md)
+  * Latest Firmware Update: [Download (hex file)](https://files.lobaro.com/s/9Zo3KQnXJDHNMgE)
+* **Housing**:
+  * Type: [TG PC 1208-6-o](/components/enclosures/spelsberg_TG_PC_1208-6-o.md)
 :::
+    See [Lobaro Tool description](/configuration/lobaro-config-tool#fwupdate) for information on how to update the firmware.
 
 ## Datasheet & Quickstart
 
