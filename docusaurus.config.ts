@@ -145,7 +145,7 @@ const config: Config = {
          },*/
         {
           href: 'https://www.lobaro.de',
-          label: 'Homepage',
+          label: 'Website',
           position: 'right',
         },
       ],
