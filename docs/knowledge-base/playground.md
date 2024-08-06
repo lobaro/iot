@@ -280,3 +280,21 @@ i18n/zh-Hans/plugin-content-docs/current.
 Absolute file paths can also be relative to the site directory. However, beware that links that begin with /docs/ or
 /blog/ are not portable as you would need to manually update them if you create new doc versions or localize them.
 
+## Content Toggle (Accordion)
+
+<details>
+  <summary>Toggle me!</summary>
+
+This is the detailed content
+
+  ```js
+  console.log("Markdown features including the code block are available");
+  ```
+
+You can use Markdown here including **bold** and _italic_ text, and [inline link](https://docusaurus.io)
+  <details>
+    <summary>Nested toggle! Some surprise inside...</summary>
+
+    😲😲😲😲😲
+  </details>
+</details>
