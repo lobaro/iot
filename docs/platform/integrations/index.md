@@ -2,7 +2,7 @@
 title: Integrations (TODO)
 sidebar_position: 0
 #displayed_sidebar: cloudSidebar
-draft: true
+draft: false
 ---
 
 # Integrations
