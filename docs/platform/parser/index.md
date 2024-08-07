@@ -102,7 +102,6 @@ Device.setProperty("key", "value");
 // value type is string, number or bool.
 // Byte arrays are encoded as Base64 strings.
 var value = Device.getConfig("key");
-
 ```
 
 ### Record functions
@@ -112,10 +111,6 @@ var value = Device.getConfig("key");
 
 // Get the time when the data was received by the server in ms, compatible with new Date(t).
 var t = Record.getReceivedAt();
-
-
-
-
 ```
 
 Set the measured time based on a field on the result json.
