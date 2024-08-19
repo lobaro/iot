@@ -42,12 +42,11 @@ description of the used firmware and other components. Please use the links belo
 description.
 :::
 
-| Component   | Manual / Description                                                                                                            | Additional note                                       |
-|:------------|:--------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
-| Firmware    | [app-nrf9160-wmbus](/components/firmware/app-nrf9160-wmbus/introduction.md)                                                     | See [here](#fwupdates) for available firmware updates |
-| Housing     | [TG PC 1208-6-o](/components/enclosures/spelsberg_TG_PC_1208-6-o.md)                                                            | 122 mm (l) x 82mm (w) x 55mm (h)                                           |
-| Battery     | [LSH20 Cell (13 Ah)](/components/batteries/19ah-battery-pack) or [Battery Pack (19Ah)](/components/batteries/19ah-battery-pack) | Li-SOCl2 (3.6 V)                                   |
-
+| Component | Manual / Description                                                                                                            | Additional note                                       |
+|:----------|:--------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
+| Firmware  | [app-nrf9160-wmbus](/components/firmware/app-nrf9160-wmbus/introduction.md)                                                     | See [here](#fwupdates) for available firmware updates |
+| Housing   | [TG PC 1208-6-o](/components/enclosures/spelsberg_TG_PC_1208-6-o.md)                                                            | 122 mm (l) x 82mm (w) x 55mm (h)                      |
+| Battery   | [LSH20 Cell (13 Ah)](/components/batteries/19ah-battery-pack) or [Battery Pack (19Ah)](/components/batteries/19ah-battery-pack) | Li-SOCl2 (3.6 V)                                      |
 
 ## Product Identification
 
@@ -60,6 +59,15 @@ style={{width: '25%', paddingTop: '10px', paddingBottom: '10px'}}/>
 * MPN / Ordering code: `8000162`
 
 ### Variants
+
+The product is available in some variants:
+
+#### embedded SIM (eSIM)
+
+Instead of an integrated circuit located on a removable SIM card, typically made of PVC, an eSIM consists of software
+installed onto an eUICC chip permanently attached to the gateway PCB. Advantages are the avoidance of corresive contacts in challenging outdoor environments.
+
+* MPN / Ordering code: `8000184`
 
 ### Accessories
 

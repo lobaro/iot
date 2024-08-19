@@ -15,3 +15,8 @@ Serves the built website locally.
 
 `npm run deploy`
 Publishes the website to GitHub pages.
+
+
+# ToDo
+
+* Variants at wmbus gateway V3
