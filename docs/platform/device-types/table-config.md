@@ -11,14 +11,14 @@ Zusätlich kann ein Typ Binary im Filter ausgesucht werden.
 
 Zugriffspfad für Config:
 
-    configuration[<column>=DevEUI].<column>
+    `configuration[<column>=DevEUI].<column>`
 
 Der erste `<column>` Wert ist eine nested Query welche den Wert "DevEUI" in der Column der Config sucht. 
-Der zweite <column> Wert ist die Haupt-Query welche denWert für den Filter bzw.
+Der zweite `<column>` Wert ist die Haupt-Query welche denWert für den Filter bzw.
 
 Beispielsweise: 
 
-    configuration[name=DevEUI].value
+    `configuration[name=DevEUI].value`
 
 Finde in jedem Device den ConfigWert, bei dem der Wert Name = "DevEUI" ist.
 
