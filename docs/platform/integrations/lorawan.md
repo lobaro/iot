@@ -3,4 +3,4 @@ title: LoRaWAN LNS (TODO)
 draft: true
 ---
 
-# Integrate LoRaWAN Network Server
+# LoRaWAN Network Server Integration
