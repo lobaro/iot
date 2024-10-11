@@ -99,3 +99,15 @@ Find relevant device(s):
 
 Use the `data.id` field from the first query to fetch device data. Replace `{deviceId}` with the actual device ID:
 - `https://platform.lobaro.com/api/devices/{deviceId}/parsed-data?limit=100&offset=0&f:createdAt=gt:2000-01-01T02:37:00%2B01:00`
+
+
+### Additional Endpoints:
+
+
+|Description   |Method |Header| URL| URL Path Params| URL Query Params| Request Payload | Return|
+|--------------|-------|------|----|----------------|-----------------|-----------------|-------|
+| Downlink creation|POST|Authorization with org-admin or device-admin token (see Access Tokens)|/api/devices/{devId}/downlink|devId: Database ID of the device|type fw config lorawan raw see also: Downlinks|The Body contains the downlink content.|See also: Downlinks|200 ok Body: Empty error status code Body: information about the error|
+|Device creation|POST|Authorization with org-admin or device-admin token (see Access Tokens)|/api/devices|-|-|deviceInput as JSON|{"name": "Gateway_1","addr": "FFFFFFFFFFFFFFFF","description": "3.OG Wohnung Müller","deviceTypeId": 2,"initialConfig": null,"location": null,"serial": "1337","tags": ["Müller", "MbusGw", "3.OG"],"certEnforcesDtls": false }|200 ok Body: Device as JSON error status code Body: information about the error|
+|User creation|POST|Authorization with org-admin token (see Access Tokens)|/api/organisation/user|-|-|userInput as JSON :{"name": "Eample Test","email": "e.test@test.com","password": "s0meSecur3Pw","roles": ["org-admin","device-admin"]}|200 ok Body: User Json {"data":{"id":17,"createdAt":"2022-07-04T10:59:41.975812+02:00","updatedAt":"2022-07-04T10:59:41.975812+02:00","login":"e.test@test.com","name":"Eample Test","email":"e.test@test.com","organisationId":1,"roles":["device-admin"]}} error status code Body: information about the error|
+|Uplink Replay|POST|Authorization with admin (platform not org) token. (see Access Tokens)|/api/admin/uplink-replay/{addr}| addr: Address of the device| datasource: string, received-at: RFC3339-string|empty|201 Create on success or http error code.|
+
