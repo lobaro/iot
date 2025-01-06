@@ -180,8 +180,8 @@ want to use those improvements for devices all ready shipped to you, you can upd
 This page describes how you install firmware on devices that you have physical access to. This can be done for most of
 our devices, those using LoRaWAN and those using NB-IoT/LTE-M.
 
-Our NB-IoT/LTE-M devices also support installing firmware over the air, without physical access. Check the [platform
-documentation](/platform) for details.
+Our NB-IoT/LTE-M devices also support installing firmware over the air, without physical access. Check the platform
+documentation for details.
 
 ### Current firmware identification
 

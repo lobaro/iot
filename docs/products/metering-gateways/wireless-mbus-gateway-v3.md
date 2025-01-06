@@ -142,7 +142,7 @@ see [online spreadsheet](https://docs.google.com/spreadsheets/d/1BjEO0UShdWuhaDq
 * Firmware can be updated locally over USB using the [Lobaro Tool](/configuration/lobaro-config-tool#fwupdate)
     * Use `...boot.hex` update file.
 * Firmware can be updated remotely (over the air) using LTE-M or NB-IoT and
-  the [IoT Platform](/platform/devices/downlinks).
+  the IoT Platform.
     * Use `...slot1.hex` update file.
 
 :::note

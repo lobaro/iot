@@ -116,13 +116,6 @@ const config: Config = {
         },
 
 
-        {
-          to: 'platform',
-          position: 'left',
-          label: 'IoT Platform',
-        },
-
-
 
         {
           to: 'knowledge-base/',
